@@ -2,7 +2,8 @@
 layout: post
 title: Jquery İle Her Ajax İşleminde Çalışacak Global Tanımlamalar Nasıl Yapılır?
 permalink: /jquery-ile-her-ajax-isleminde-calisacak-global-tanimlamalar-nasil-yapilir
-categories: jquery
+categories: [jquery]
+tags: [ipucu]
 comments: 1
 ---
 

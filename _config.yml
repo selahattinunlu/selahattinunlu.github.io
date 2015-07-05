@@ -40,3 +40,23 @@ pages_list:
   Hakkımda: '/hakkimda'
   Arşiv: '/arsiv'
   Feed: '/atom.xml'
+
+collections:
+  # Belgeler
+  algoritmalar:
+    output: true
+    permalink: belgeler/algoritmalar/:path/
+  tasarim-desenleri:
+    output: true
+    permalink: belgeler/tasarim-desenleri/:path/
+  yazilim-prensipleri:
+    output:  true
+    permalink: belgeler/yazilim-prensipleri/:path/
+  yazilimcilar:
+    output:  true
+    permalink: belgeler/yazilimcilar/:path/
+
+  # Projeler
+  projeler:
+    output: true
+    permalink: projeler/:path/
