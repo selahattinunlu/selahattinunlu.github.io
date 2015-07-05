@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Anasayfa
 ---
 
 <div class="posts">
@@ -11,10 +11,7 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
-
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
   </article>
   {% endfor %}
 </div>
