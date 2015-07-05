@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr-TR">
 
 	{% include head.html %}
 
@@ -29,23 +29,5 @@
 		</div>
 
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script>
-			$.ajaxSetup({
-				beforeSend: function() {
-					console.log('gönderiliyor.');
-				},
-				data: {
-					username: 'selahattin'
-				}
-			})
-
-			$.ajax({
-				url :'http://selahattinunlu.com',
-				type: 'POST',
-				data: {
-					username: 'aefaef0'
-				}
-			});
-		</script>
 	</body>
 </html>

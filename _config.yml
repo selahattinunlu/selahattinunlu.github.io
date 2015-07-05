@@ -85,15 +85,18 @@ defaults:
       types: [algoritmalar, tasarim-desenleri, yazilimcilar, yazilim-prensipleri]
     values:
       layout: document
+      comments: 1
   # works
   - scope:
       path: ''
       type: isler
     values:
       layout: work
+      comments: 1
   # projects
   - scope:
       path: ''
       type: projeler
     values:
       layout: project
+      comments: 1
