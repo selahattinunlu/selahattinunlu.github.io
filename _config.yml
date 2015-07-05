@@ -79,7 +79,6 @@ defaults:
       type: page
     values:
       layout: page
-      comments: 1
   # documents
   - scope:
       path: ''
