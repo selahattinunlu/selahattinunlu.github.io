@@ -1,5 +1,5 @@
 ---
-title: Hakkımda
+title: Projelerim
 ---
 
 <p class="message">

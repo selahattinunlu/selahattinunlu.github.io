@@ -1,6 +1,5 @@
 ---
-layout: page
-title: X algoritmaları
+title: X algoritmalarıae
 ---
 
 deneme bir içerik

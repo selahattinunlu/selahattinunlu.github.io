@@ -1,5 +1,5 @@
 ---
-title: Hakkımda
+title: Yaptığım Freelance İşler
 ---
 
 <p class="message">

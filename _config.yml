@@ -60,3 +60,41 @@ collections:
   projeler:
     output: true
     permalink: projeler/:path/
+  isler:
+    output: true
+    permalink: isler/:path/
+
+# Defaults
+defaults:
+  # posts
+  - scope:
+      path: ''
+      type: post
+    values:
+      layout: post
+      comments: 1
+  # pages
+  - scope:
+      path: ''
+      type: page
+    values:
+      layout: page
+      comments: 1
+  # documents
+  - scope:
+      path: ''
+      types: [algoritmalar, tasarim-desenleri, yazilimcilar, yazilim-prensipleri]
+    values:
+      layout: document
+  # works
+  - scope:
+      path: ''
+      type: isler
+    values:
+      layout: work
+  # projects
+  - scope:
+      path: ''
+      type: projeler
+    values:
+      layout: project

@@ -1,6 +1,4 @@
-
 ---
-layout: page
 title: X Yazılım Prensibi
 ---
 
