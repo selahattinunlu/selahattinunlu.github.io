@@ -60,9 +60,14 @@ collections:
   projeler:
     output: true
     permalink: projeler/:path/
+  # İşler
   isler:
     output: true
     permalink: isler/:path/
+  # Demolar
+  demo:
+    output: true
+    permalink: demo/:path.html
 
 # Defaults
 defaults:
@@ -79,6 +84,7 @@ defaults:
       type: page
     values:
       layout: page
+      comments: 0
   # documents
   - scope:
       path: ''
