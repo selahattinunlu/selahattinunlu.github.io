@@ -5,14 +5,22 @@
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
+  background: #f5f5f5;
+  padding: 40px;
+}
+
+.posts .post {
+  text-align: center;
 }
 
 // Blog post or page title
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #555;
+  font-size: 1.3rem;
+  margin-bottom: 1em;
 }
 .page-title,
 .post-title {
@@ -23,7 +31,6 @@
 .post-date {
   display: block;
   margin-top: -.5rem;
-  margin-bottom: 1rem;
   color: #9a9a9a;
 }
 
