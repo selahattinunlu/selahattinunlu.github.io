@@ -7,6 +7,18 @@ layout: default
   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
   {{ content }}
   {% include twitter_plug.html %}
+
+
+  {% if page.references %}
+    <hr>
+    <h2>Referanslar</h2>
+
+    {% for reference in page.references %}
+    <li><a href="">{{ reference }}</a></li>
+    {% endfor %}
+    <hr>
+  {% endif %}
+
 </article>
 
 {% if site.related_posts != empty %}
