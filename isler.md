@@ -1,29 +1,31 @@
 ---
-title: Yaptığım Freelance İşler
+title: Freelance İşler
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Müşterilerim için üzerinde freelance olarak çalıştığım bazı projelere göz atabilirsiniz.
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+<hr>
 
-There are currently two themes built on Poole:
+### Chictowndeco.com
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+Chictowndeco, ev dekorasyonu ürünleri satışı gerçekleştiren bir firma.
+Bu firma için kurumsal bir web sitesi arayüzü yazılımı ve yönetim paneli yazılımı hazırladım.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+[Web Sitesini İncelemek İçin Tıklayın](http://chictowndeco.com){:target="_blank"}
 
-## Setup
+<hr>
 
-Some fun facts about the setup of this project include:
+### Bektastekstil.com
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+Bektastekstil.com yetkilileri mevcut olan web siteleri için mobil cihazlar için ayrı bir çalışma talep ettiler. 
+Mobil cihazınızdan bektastekstil.com sitesini ziyaret ederek çalışmamı görüntüleyebilirsiniz.
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+<hr>
 
-Thanks for reading!
+### Bodroom.com.tr
+
+Bodroom.com.tr için bir yönetim paneli yazılımı tamamlayarak mevcut arayüzleri ile entegrasyonunu gerçekleştirdim.
+
+[Web Sitesini İncelemek İçin Tıklayın](http://bodroom.com.tr){:target="_blank"}
+
+<hr>
