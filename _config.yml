@@ -38,24 +38,15 @@ github:
 
 pages_list:       
   Hakkımda: '/hakkimda'
+  Freelance: '/isler'
   Arşiv: '/arsiv'
   Feed: '/atom.xml'
 
 collections:
-  # Belgeler
-  algoritmalar:
+  # Blog Serileri
+  seriler:
     output: true
-    permalink: belgeler/algoritmalar/:path/
-  tasarim-desenleri:
-    output: true
-    permalink: belgeler/tasarim-desenleri/:path/
-  yazilim-prensipleri:
-    output:  true
-    permalink: belgeler/yazilim-prensipleri/:path/
-  yazilimcilar:
-    output:  true
-    permalink: belgeler/yazilimcilar/:path/
-
+    permalink: seriler/:path/
   # Projeler
   projeler:
     output: true
@@ -78,6 +69,20 @@ defaults:
     values:
       layout: post
       comments: 1
+  # series
+  - scope:
+      path: ''
+      type: seriler
+    values:
+      layout: series
+      comments: 1
+  # drafts
+  - scope:
+      path: ''
+      type: draft
+    values:
+      layout: post
+      comments: 1
   # pages
   - scope:
       path: ''
@@ -85,13 +90,6 @@ defaults:
     values:
       layout: page
       comments: 0
-  # documents
-  - scope:
-      path: ''
-      types: [algoritmalar, tasarim-desenleri, yazilimcilar, yazilim-prensipleri]
-    values:
-      layout: document
-      comments: 1
   # works
   - scope:
       path: ''
