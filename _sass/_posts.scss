@@ -3,6 +3,24 @@
 // Each post is wrapped in `.post` and is used on default and post layouts. Each
 // page is wrapped in `.page` and is only used on the page layout.
 
+.single-post {
+  line-height: 2em;
+  font-size: .9rem;
+
+  header {
+    margin-bottom: 20px;
+  }
+
+  .post-title {
+    font-size: 2.3rem;
+    margin-bottom: .3em;
+  }
+
+  h3 {
+    color: #666;
+  }
+}
+
 .page,
 .post {
   margin-bottom: 3em;
