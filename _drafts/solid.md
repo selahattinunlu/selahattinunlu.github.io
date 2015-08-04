@@ -7,13 +7,12 @@ references: [
   'http://www.slideshare.net/dumural/solid-tasarm-prensipleri',
   'https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)',
   'https://en.wikipedia.org/wiki/Open/closed_principle',
-  'http://www.clubcrema.com/index.php/2013/05/solid-prensipleri-solid-principles/',
+  'https://en.wikipedia.org/wiki/Interface_segregation_principle',
+  'http://www.turkayurkmez.com/arayuzlerin-ayrimi-prensibi-isp-interface-segregation-principle/',
   'http://www.codemag.com/article/1001061',
   'http://www.tarikkaygusuz.com/post/solid-prensipleri',
+  'http://www.clubcrema.com/index.php/2013/05/solid-prensipleri-solid-principles/',
   'http://harunozer.com/makale/liskov_substitution_principle__liskov_yerdegistirme_prensibi.htm'
-]
-incelenecekler: [
-    'http://www.barbarosgurcan.com/post/SOLID-Principles-nedir-SOLID-ilkeleri.aspx',
 ]
 ---
 
@@ -56,9 +55,7 @@ sorunlarıydı. SOLID ile bu sorunlara çözüm üretmek amaçlanmıştır.
 
 **Sabitlik:** Geliştirilmiş modülün başka yerde tekrar kullanılabilir (reusable) olmaması
 
-<hr>
-### Prensipleri İnceleyelim
-<hr>
+---
 
 ### Single Responsibility
 
@@ -135,6 +132,8 @@ class EmailSender {
 
 Yeni kod yapısı incelendiğinde her sınıfın bir tek işten sorumlu olduğunu görebiliriz. 
 Böylece daha anlaşılır ve daha kolay geliştirilebilir sınıflar, yazılımlar geliştirebiliriz.
+
+---
 
 ### Open - Closed
 
@@ -242,6 +241,8 @@ Xmail adında başka bir servisi sistemimize ekleyip artık o servisi kullanarak
   $email->send('selahattin.unlu@yandex.com', 'başlık', 'mesaj');
 ?>
 {% endhighlight %}
+
+---
 
 ### Liskov subsitution 
 
@@ -390,3 +391,156 @@ Kodları incelediğiniz zaman iki adet yazıcımız var ve bu yazıcılar ortak 
   $taramaIslemi->tara();
 ?>
 {% endhighlight %}
+
+---
+
+### Interface Segregation
+
+Türkçe olarak **Arayüzlerin Ayrılması** diyebiliriz. Ayrıca Single Responsibility prensibinin arayüzler için geçerli olduğu bir prensip olarak kabul edilebilir.
+
+**Tanım:** Nesneler ihtiyaç duymadıkları metotların bulunduğu interface'lere bağlı olmaya zorlanmamalıdır.
+
+Bir otomobil örneği üzerinden gidelim.
+
+ileriGit, geriGit, dur ve benziniGoster metotlarına sahip bir Otomobil arayüzü oluşturup fabrikamızın üreteceği tüm araçlarda bu arayüze bağlı kalacağız. İlk aracımız benzinli, Bmw marka bir otomobil.
+
+{% highlight php %}
+<?php  
+  interface Otomobil 
+  {
+    public function ileriGit();
+
+    public function geriGit();
+
+    public function dur();
+
+    public function benziniGoster();
+  }
+
+  class Bmw implements Otomobil
+  {
+    public function ileriGit()
+    {
+      // 
+    }
+
+    public function geriGit()
+    {
+      //
+    }
+
+    public function dur()
+    {
+      //
+    }
+
+    public function benziniGoster()
+    {
+      return 'Kalan benzin: xxx';
+    }
+  }
+
+  function kalanBenzin(Otomobil $otomobil)
+  {
+    echo $otomobil->benziniGoster();
+  }
+
+  // app
+  kalanBenzin(new Bmw()); // çıktı => 'Kalan benzin: xxx'
+?>
+{% endhighlight %}
+
+Hiçbir problem gözükmüyor. Otomobil interface'ine bağlı olan herhangi bir nesneyi `kalanBenzin` fonksiyonuna parametre olarak verdiğimizde program düzgün bir şekilde çalışacaktır. 
+
+Peki ya benzin kullanmayan elektrikli bir araç üretecek olsak? Bu nesneyi de `Otomobil` arayüzüne bağlı kalarak üretirsek kullanmayacağı `benziniGoster` metotunu da kullanması için zorlamış olacağız.
+
+Böyle bir sorun yaşamamak için mümkün olduğunca arayüzlerimizi parçalara ayırmalıyız. 
+
+{% highlight php %}
+<?php 
+  interface OtomobilInterface
+  {
+    public function ileriGit();
+
+    public function geriGit();
+
+    public function dur();
+  }
+
+  interface BenzinliOtomobilInterface
+  {
+    public function benziniGoster();
+  }
+
+  interface ElektrikliOtomobilInterface
+  {
+    public function sarjiGoster();
+  }
+
+  class Bmw implements OtomobilInterface, BenzinliOtomobilInterface
+  {
+    public function ileriGit()
+    {
+      //
+    }
+
+    public function geriGit()
+    {
+      //
+    }
+
+    public function dur()
+    {
+      //
+    }
+
+    public function benziniGoster()
+    {
+      return 'Kalan benzin: xxx';
+    }
+  }
+
+  class Tesla implements OtomobilInterface, ElektrikliOtomobilInterface
+  {
+    public function ileriGit()
+    {
+      //
+    }
+
+    public function geriGit()
+    {
+      //
+    }
+
+    public function dur()
+    {
+      //
+    }
+
+    public function sarjiGoster()
+    {
+      return 'Kalan sarj: yyy';
+    }
+  }
+
+  function kalanBenzin(BenzinliOtomobilInterface $otomobil)
+  {
+    $otomobil->benziniGoster();
+  }
+
+  function kalanSarj(ElektrikliOtomobilInterface $otomobil)
+  {
+    $otomobil->sarjiGoster();
+  }
+
+  // app
+  kalanBenzin(new Bmw); // çıktı => Kalan benzin: xxx
+  kalanSarj(new Tesla); // çıktı => Kalan sarj: yyy
+?>
+{% endhighlight %}
+
+---
+
+### Dependency Inversion
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laborum veritatis nesciunt culpa. Facere cupiditate, quaerat eum esse corporis deleniti nostrum facilis fugiat assumenda sint, repudiandae recusandae itaque dicta consequatur.
