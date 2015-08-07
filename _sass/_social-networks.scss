@@ -1,0 +1,14 @@
+.social-networks {
+	margin-top: .2em;
+	display: flex;
+	justify-content: center;
+}
+
+.social-networks-item {
+	padding: 0 .7em;
+	color: #777;
+
+	&:hover {
+		color: #444;
+	}
+}
