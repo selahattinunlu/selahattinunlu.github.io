@@ -18,6 +18,9 @@
 
   h3 {
     color: #666;
+    font-size: 1.5rem;
+    margin-top: 1.2em;
+    margin-bottom: 1em;
   }
 }
 
@@ -58,6 +61,10 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
+
+  h2 {
+    color: #666;
+  }
 }
 
 .related-posts {
@@ -72,6 +79,10 @@
     small {
       font-size: 75%;
       color: #999;
+    }
+
+    a {
+      color: #888;
     }
 
     a:hover {
