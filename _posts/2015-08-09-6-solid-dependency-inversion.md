@@ -6,6 +6,7 @@ tags: [yazilim-prensipleri, solid]
 references: [
   'https://en.wikipedia.org/wiki/Dependency_inversion_principle',
   'http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872',
+  'http://www.resulaslan.com/solid-prensipleri/',
   'http://www.cihataltuntas.com/dependency-inversion-principle-dip/',
   'http://www.turkayurkmez.com/bagliligi-tersine-cevirme-prensibi-dependency-inversion-principle-dip/',
 ]
@@ -27,9 +28,13 @@ references: [
 
 ---
 
+<div class="alert">
+  <h3>Dikkat</h3> Dependency <strong>Inversion</strong> ile Dependency <strong>Injection</strong>'ı karıştırmayın!
+</div>
+
 ### Tanımlama
 
---- Yüksek seviye modüller, düşük seviye modüllere bağlı olmamalı. Her ikisi de soyut (abstract) kavramlara bağlı olmalı.
+--- Yüksek seviye modüller, düşük seviye modüllere bağlı olmamalı. Her ikisi de soyut (abstract sınıf ya da interface) kavramlara bağlı olmalı.
 
 --- Soyut kavramlar detaylara bağlı olmamalı. Detaylar soyut kavramlara bağlı olmalı.
 
@@ -37,7 +42,16 @@ references: [
 
 Bir sınıf direkt olarak bir başka somut sınıfa bağlı olmamalı, araya koyulacak bir soyut kavrama (interface'e ya da abstract sınıfa) bağlı olmalı da diyebiliriz. Böylece bu interface'i uygulayan alt sınıfları sorunsuzca üst seviye sınıfımızda kullanabiliriz ve alt sınıfta arayüze bağlı kaldığı sürece gerçekleşecek olası değişiklikler, üst sınıfın çalışmasını etkilemeyecektir.
 
-### Örnek
+> Bu prensipteki amaç gerçek nesneye bağlı kalmamak. 
+>
+> Şöyle özetleyeyim:
+>
+> Çakmak soyut bir nesnedir. Ocağı çakmakla yakarsın. Fakat bunu "gerçek nesne" haline getirip, zippo çakmak dersen 
+> 2 gün sonra muhtar çakmağı ile yakmak gerektiğinde kodu değiştirmek zorunda kalırsın.
+>
+> Örnek için [Resul Aslan](http://resulaslan.com){:target="_blank"}'a teşekkür ederim.
+
+### Kodlar ile Örnek
 
 > tuts+ makalesindeki örnektir. Dilerseniz referanslarda yer alan linkten orjinaline ulaşabilirsiniz.
 
@@ -47,7 +61,7 @@ Bir e-kitap okuyucu geliştirdiğimizi hayal edin.
 <?php  
   class PDFReader
   {
-  	protected $book;
+    protected $book;
 
     public function __construct(PDFBook $book)
     {
