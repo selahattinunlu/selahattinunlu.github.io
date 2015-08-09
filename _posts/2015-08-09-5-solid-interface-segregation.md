@@ -29,143 +29,179 @@ references: [
 
 Türkçe olarak **Arayüzlerin Ayrılması** diyebiliriz. Ayrıca Single Responsibility prensibinin arayüzler için geçerli olduğu bir prensip olarak kabul edilebilir.
 
-**Tanım:** Nesneler ihtiyaç duymadıkları metotların bulunduğu interface'lere bağlı olmaya zorlanmamalıdır.
+<div class="alert">
+  <h3>Tanım</h3>
 
-Bir otomobil örneği üzerinden gidelim.
+  Nesneler kullanmadığı metodun yer aldığı bir interface'i uygulamaya zorlanmamalıdır.
+</div>
 
-ileriGit, geriGit, dur ve benziniGoster metotlarına sahip bir Otomobil arayüzü oluşturup fabrikamızın üreteceği tüm araçlarda bu arayüze bağlı kalacağız. İlk aracımız benzinli, Bmw marka bir otomobil.
+Bir fabrika hayal edelim. Bu fabrikanın çalışanları `İşçi` interface'ine bağlı olsun. Ve bu `İşçi` interface'inde `uret()` ve `dinlen()` metotları yer alsın.
 
-{% highlight php %}
-<?php  
-  interface Otomobil 
-  {
-    public function ileriGit();
-
-    public function geriGit();
-
-    public function dur();
-
-    public function benziniGoster();
-  }
-
-  class Bmw implements Otomobil
-  {
-    public function ileriGit()
-    {
-      // 
-    }
-
-    public function geriGit()
-    {
-      //
-    }
-
-    public function dur()
-    {
-      //
-    }
-
-    public function benziniGoster()
-    {
-      return 'Kalan benzin: xxx';
-    }
-  }
-
-  function kalanBenzin(Otomobil $otomobil)
-  {
-    echo $otomobil->benziniGoster();
-  }
-
-  // app
-  kalanBenzin(new Bmw()); // çıktı => 'Kalan benzin: xxx'
-?>
-{% endhighlight %}
-
-Hiçbir problem gözükmüyor. Otomobil interface'ine bağlı olan herhangi bir nesneyi `kalanBenzin` fonksiyonuna parametre olarak verdiğimizde program düzgün bir şekilde çalışacaktır. 
-
-Peki ya benzin kullanmayan elektrikli bir araç üretecek olsak? Bu nesneyi de `Otomobil` arayüzüne bağlı kalarak üretirsek kullanmayacağı `benziniGoster` metotunu da kullanması için zorlamış olacağız.
-
-Böyle bir sorun yaşamamak için mümkün olduğunca arayüzlerimizi parçalara ayırmalıyız. 
+Bu `İnsan` için uygulanabilir bir interface fakat Amazon gibi dev bir şirketseniz ve çalışanlarınız arasında dinlenmeye ihtiyacı olmayan `Robot`lar da yer alıyorsa? 
 
 {% highlight php %}
 <?php 
-  interface OtomobilInterface
+  interface IsciInterface
   {
-    public function ileriGit();
+    public function uret();
 
-    public function geriGit();
-
-    public function dur();
+    public function dinlen();
   }
 
-  interface BenzinliOtomobilInterface
+  class Insan implements IsciInterface
   {
-    public function benziniGoster();
-  }
-
-  interface ElektrikliOtomobilInterface
-  {
-    public function sarjiGoster();
-  }
-
-  class Bmw implements OtomobilInterface, BenzinliOtomobilInterface
-  {
-    public function ileriGit()
+    public function uret()
     {
       //
     }
 
-    public function geriGit()
+    public function dinlen()
     {
       //
-    }
-
-    public function dur()
-    {
-      //
-    }
-
-    public function benziniGoster()
-    {
-      return 'Kalan benzin: xxx';
     }
   }
 
-  class Tesla implements OtomobilInterface, ElektrikliOtomobilInterface
+  class Robot implements IsciInterface
   {
-    public function ileriGit()
+    public function uret()
     {
       //
     }
 
-    public function geriGit()
+    public function dinlen()
     {
-      //
-    }
-
-    public function dur()
-    {
-      //
-    }
-
-    public function sarjiGoster()
-    {
-      return 'Kalan sarj: yyy';
+      return null; // ihtiyacı olmayan, kullanmadığı bir metodu uygulamaya zorladık
     }
   }
 
-  function kalanBenzin(BenzinliOtomobilInterface $otomobil)
+  class Fabrika
   {
-    $otomobil->benziniGoster();
+    public function calistir(IsciInterface $isci)
+    {
+      $isci->uret();
+      $isci->dinlen();
+    }
   }
-
-  function kalanSarj(ElektrikliOtomobilInterface $otomobil)
-  {
-    $otomobil->sarjiGoster();
-  }
-
-  // app
-  kalanBenzin(new Bmw); // çıktı => Kalan benzin: xxx
-  kalanSarj(new Tesla); // çıktı => Kalan sarj: yyy
 ?>
 {% endhighlight %}
+
+Tanımda yer aldığı gibi nesneler kullanmadığı, ihtiyaç duymadığı bir metodun yer aldığı arayüzü uygulamaya zorlanmamalı! O halde `Isci` interface'ine parçalara ayırmamız gerecek.
+
+{% highlight php %}
+<?php 
+  interface UretebilirInterface
+  {
+    public function uret();
+  }
+
+  interface DinlenebilirInterface
+  {
+    public function dinlen();
+  }
+
+  class Insan implements UretebilirInterface, DinlenebilirInterface
+  {
+    public function uret()
+    {
+      //
+    }
+
+    public function dinlen()
+    {
+      //
+    }
+  }
+
+  class Robot implements UretebilirInterface
+  {
+    public function uret()
+    {
+      //
+    }
+  }
+
+  class Fabrika
+  {
+    public function calistir(UretebilirInterface $isci)
+    {
+      $isci->uret();
+
+      if ($isci instanceof Robot) return;
+
+      $isci->dinlen();
+    }
+  }
+?>
+{% endhighlight %}
+
+Bu sefer sorun çözülmüş gibi duruyor değil mi? Hayır! Bu sefer de Open-Closed prensibini ihlal etmiş olduk. Yeni bir işçi türü eklendiğinde ve Robot gibi dinlemeye ihtiyacı yoksa? Fabrika sınıfının kodlarına müdahale etmemiz gerekecek. 
+
+<div class="alert">
+  <h3>Hatırlatma</h3>
+
+  Open-Closed prensibi, bir sınıfın genişlemeye, gelişmeye açık, değişime kapalı olmasıdır.
+</div>
+
+O halde biraz daha inceleyelim. Farklı işçi tipleri farklı çalışma şekillerine sahip. `İnsan` çalışırken üretiyor fakat dinlenmeye ihtiyaç duyuyor. `Robot` çalışırken dinlenme ihtiyacı duymadan üretebiliyor. İşçilerimizin çalışma şekilleri farklı olsa da ortak noktaları `Çalışabilir` olmaları!
+
+{% highlight php %}
+<?php  
+  interface CalisabilirInterface
+  {
+    public function calis();
+  }
+
+  interface UretebilirInterface
+  {
+    public function uret();
+  }
+
+  interface DinlenebilirInterface
+  {
+    public function dinlen();
+  }
+
+  class Insan implements UretebilirInterface, DinlenebilirInterface, CalisabilirInterface
+  {
+    public function uret()
+    {
+      //
+    }
+
+    public function dinlen()
+    {
+      //
+    }
+
+    public function calis()
+    {
+      $this->uret();
+      $this->dinlen();
+    }
+  }
+
+  class Robot implements UretebilirInterface, CalisabilirInterface
+  {
+    public function uret()
+    {
+      //
+    }
+
+    public function calis()
+    {
+      $this->uret();
+    }
+  }
+
+  class Fabrika
+  {
+    public function calistir(CalisabilirInterface $isci)
+    {
+      $isci->calis();
+    }
+  }
+?>
+{% endhighlight %}
+
+İşte şimdi oldu! Artık `CalisabilirInterface` imizi uygulayan herhangi bir işçiyi çalıştırabiliriz.
+
