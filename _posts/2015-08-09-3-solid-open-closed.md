@@ -89,7 +89,7 @@ Bir de şu şekilde bir yapımız olduğunu düşünelim:
     }
   }
 
-  class EmailSenderService implements EmailService {
+  class EmailSenderService {
     public $emailService;
 
     public function __construct(EmailService $emailService)
