@@ -74,7 +74,7 @@ E-kitap okuyucumuzu bir PDF okuyucu gibi geliştirmeye başladık. Şimdilik bir
 
 ![](/public/img/posts/solid-principles/pdfreader-uses-pdfbook.png "PDFReader sınıfı PDFBook sınıfını kullanıyor")
 
-Eğer uygulamamız PDF dışında herhangi bir formatta yer alan e-kitabı okumayacaksa bu çözüm kabul edilebilir. Ama biz ilk uygulamadığımız örnekteki PDF'in de içinde bulunduğu birkaç farklı formatı destekleyen kapsamlı bir e-kitap okuyucu geliştirmek istiyoruz. Sınıfımızı tekrar isimlendirelim.
+Eğer uygulamamız PDF dışında herhangi bir formatta yer alan e-kitabı okumayacaksa bu çözüm kabul edilebilir. Ama biz ilk uyguladığımız örnekteki PDF'in de içinde bulunduğu birkaç farklı formatı destekleyen kapsamlı bir e-kitap okuyucu geliştirmek istiyoruz. Sınıfımızı tekrar isimlendirelim.
 
 {% highlight php %}
 <?php  
