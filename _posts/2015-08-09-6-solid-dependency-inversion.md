@@ -35,7 +35,7 @@ references: [
 
 ---
 
-Bir sınıf direkt olarak bir başka somut sınıfa bağlı olmamalı, araya koyulacak bir soyut kavrama (interface'e) bağlı olmalı da diyebiliriz. Böylece bu interface'i uygulayan alt sınıfları sorunsuzca üst seviye sınıfımızda kullanabiliriz ve alt sınıfta arayüze bağlı kaldığı sürece gerçekleşecek olası değişiklikler, üst sınıfın çalışmasını etkilemeyecektir.
+Bir sınıf direkt olarak bir başka somut sınıfa bağlı olmamalı, araya koyulacak bir soyut kavrama (interface'e ya da abstract sınıfa) bağlı olmalı da diyebiliriz. Böylece bu interface'i uygulayan alt sınıfları sorunsuzca üst seviye sınıfımızda kullanabiliriz ve alt sınıfta arayüze bağlı kaldığı sürece gerçekleşecek olası değişiklikler, üst sınıfın çalışmasını etkilemeyecektir.
 
 ### Örnek
 
