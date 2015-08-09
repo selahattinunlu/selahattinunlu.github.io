@@ -12,12 +12,12 @@ layout: default
   {% include twitter_plug.html %}
 
   
-  {% if post.references %}
+  {% if page.references %}
     <hr>
     <h2>Referanslar</h2>
 
-    {% for reference in post.references %}
-    <li><a href="">{{ reference }}</a></li>
+    {% for reference in page.references %}
+    <li><a href="{{ reference }}" target="_blank">{{ reference }}</a></li>
     {% endfor %}
     <hr>
   {% endif %}
