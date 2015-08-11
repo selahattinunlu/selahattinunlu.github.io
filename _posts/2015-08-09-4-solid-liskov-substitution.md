@@ -1,6 +1,6 @@
 ---
-title: SOLID - Liskov Subsitution Prensibi
-permalink: /solid-liskov-subsitution
+title: SOLID - Liskov Substitution Prensibi
+permalink: /solid-liskov-substitution
 categories: [programming]
 tags: [yazilim-prensipleri, solid]
 references: [
@@ -22,7 +22,7 @@ references: [
 >
 > 3 --- [Open - Closed Prensibi](/solid-open-closed)
 >
-> 4 --- Liskov Subsitution Prensibi
+> 4 --- Liskov Substitution Prensibi
 >
 > 5 --- [Interface Segregation Prensibi](/solid-interface-segregation)
 >
