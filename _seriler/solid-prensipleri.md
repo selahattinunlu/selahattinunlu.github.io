@@ -8,7 +8,7 @@ title: SOLID Prensipleri
 
 3 --- [Open - Closed Prensibi](/solid-open-closed)
 
-4 --- [Liskov Subsitution Prensibi](/solid-liskov-subsitution)
+4 --- [Liskov Substitution Prensibi](/solid-liskov-substitution)
 
 5 --- [Interface Segregation Prensibi](/solid-interface-segregation)
 
