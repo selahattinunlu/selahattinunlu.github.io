@@ -28,14 +28,14 @@ references: [
 >
 > 6 --- [Dependency Inversion Prensibi](/solid-dependency-inversion)
 
-<div class="alert">
-  <h2>Taslak</h2>
-
-  Bu makalede yer alan örneği kaldırdım. Yeni örneği yakında ekleyeceğim.
-</div>
-
 Bu prensip Barbara Liskov tarafından öne sürülmüştür.
 
 Bu prensip yer değiştirilebilirlik, yerine kullanılabilirlikten bahsediyor. Bir program içerisinde "S", "T"nin alt tipi ise "T" tipindeki objeler "S" tipindeki objeler ile özellikleri değiştirilmeden yer değiştirilebilir olmalıdır.
 
-Biraz daha açık anlatmak gerekirse, "Alt sınıflardan oluşan nesneler üst sınıfların nesneleriyle yer değiştirdiklerinde aynı davranışı sergilemelidir.".
+Not almak için dolma kalem ya da kurşun kalem kullanıyor olmanızın bir önemi yoktur. Kalemden türeyen herhangi tür kalem sizin beklentinizi karşılar ve yazabilirsiniz.
+
+<div class="alert">
+	<h2>Önemli</h2>
+
+	Örneğin yanlış olduğunu düşünüyorsanız ya da daha iyi bir örnek hazırladıysanız <a href="https://github.com/selahattinunlu/selahattinunlu.github.io/blob/master/_posts/2015-08-09-4-solid-liskov-substitution.md" target="_blank">Github üzerinden</a> katkıda bulunabilirsiniz.
+</div>
