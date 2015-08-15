@@ -1,4 +1,5 @@
 ---
+serie: 'solid_serie'
 title: SOLID - Open - Closed Prensibi
 permalink: /solid-open-closed
 categories: [programming]
@@ -11,20 +12,6 @@ references: [
   'http://www.clubcrema.com/index.php/2013/05/solid-prensipleri-solid-principles/',
 ]
 ---
-
-> Bu yazı ["SOLID Prensipleri"](/seriler/solid-prensipleri) yazı dizisinin bir parçasıdır.
->
-> 1 --- [Nedir, Neden İhtiyaç Duyulmuştur?](/solid-nedir-neden-ihtiyac-duyulmustur)
->
-> 2 --- [Single Responsibility Prensibi](/solid-single-responsibility)
->
-> 3 --- Open - Closed Prensibi
->
-> 4 --- [Liskov Substitution Prensibi](/solid-liskov-substitution)
->
-> 5 --- [Interface Segregation Prensibi](/solid-interface-segregation)
->
-> 6 --- [Dependency Inversion Prensibi](/solid-dependency-inversion)
 
 Bu prensibe göre yazılım varlıkları (sınıf, modül, fonksiyonlar vs.) geliştirmeye açık ve değişime kapalı olmalıdır.
 Yani bir sınıfı ele alacak olursak, sınıfın davranışında değişiklik yapmanız gerektiğinde direkt olarak sınıfın mevcut kodlarını değiştirmemelisiniz.

@@ -1,4 +1,5 @@
 ---
+serie: 'solid_serie'
 title: SOLID - Nedir, Neden İhtiyaç Duyulmuştur?
 permalink: /solid-nedir-neden-ihtiyac-duyulmustur
 categories: [programming]
@@ -11,20 +12,6 @@ references: [
   'http://www.clubcrema.com/index.php/2013/05/solid-prensipleri-solid-principles/',
 ]
 ---
-
-> Bu yazı ["SOLID Prensipleri"](/seriler/solid-prensipleri) yazı dizisinin bir parçasıdır.
->
-> 1 --- Nedir, Neden İhtiyaç Duyulmuştur?
->
-> 2 --- [Single Responsibility Prensibi](/solid-single-responsibility)
->
-> 3 --- [Open - Closed Prensibi](/solid-open-closed)
->
-> 4 --- [Liskov Substitution Prensibi](/solid-liskov-substitution)
->
-> 5 --- [Interface Segregation Prensibi](/solid-interface-segregation)
->
-> 6 --- [Dependency Inversion Prensibi](/solid-dependency-inversion)
 
 <!-- nedir -->
 

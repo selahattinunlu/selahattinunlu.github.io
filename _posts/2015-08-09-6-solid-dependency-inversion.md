@@ -1,4 +1,5 @@
 ---
+serie: 'solid_serie'
 title: SOLID - Dependency Inversion Prensibi
 permalink: /solid-dependency-inversion
 categories: [programming]
@@ -10,22 +11,6 @@ references: [
   'http://www.cihataltuntas.com/dependency-inversion-principle-dip/',
   'http://www.turkayurkmez.com/bagliligi-tersine-cevirme-prensibi-dependency-inversion-principle-dip/',
 ]
----
-
-> Bu yazı ["SOLID Prensipleri"](/seriler/solid-prensipleri) yazı dizisinin bir parçasıdır.
->
-> 1 --- [Nedir, Neden İhtiyaç Duyulmuştur?](/solid-nedir-neden-ihtiyac-duyulmustur)
->
-> 2 --- [Single Responsibility Prensibi](/solid-single-responsibility)
->
-> 3 --- [Open - Closed Prensibi](/solid-open-closed)
->
-> 4 --- [Liskov Substitution Prensibi](/solid-liskov-substitution)
->
-> 5 --- [Interface Segregation Prensibi](/solid-interface-segregation)
->
-> 6 --- Dependency Inversion Prensibi
-
 ---
 
 <div class="alert">

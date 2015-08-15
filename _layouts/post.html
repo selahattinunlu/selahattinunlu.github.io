@@ -7,8 +7,25 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
   </header>
+  
+  <!-- seri linkleri -->
+  {% if page.serie %}
+  <blockquote>
+    <p>Bu yazı <a href="{{ site[page.serie].uri }}">{{ site[page.serie].title }}</a> yazı dizisinin bir parçasıdır.</p>
+
+    {% for post in site[page.serie].posts %}
+      {% if page.permalink == post.uri %}
+        <p>— {{ post.title }}</p>
+      {% else %}
+        <p>— <a href="{{ post.uri }}">{{ post.title }}</a></p>
+      {% endif %}      
+    {% endfor %}
+  </blockquote>
+  {% endif %}
+  <!-- seri linkleri -->
 
   {{ content }}
+
   {% include twitter_plug.html %}
 
   

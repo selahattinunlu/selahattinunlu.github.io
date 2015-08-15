@@ -1,4 +1,5 @@
 ---
+serie: 'solid_serie'
 title: SOLID - Interface Segregation Prensibi
 permalink: /solid-interface-segregation
 categories: [programming]
@@ -12,20 +13,6 @@ references: [
   'http://www.clubcrema.com/index.php/2013/05/solid-prensipleri-solid-principles/',
 ]
 ---
-
-> Bu yazı ["SOLID Prensipleri"](/seriler/solid-prensipleri) yazı dizisinin bir parçasıdır.
->
-> 1 --- [Nedir, Neden İhtiyaç Duyulmuştur?](/solid-nedir-neden-ihtiyac-duyulmustur)
->
-> 2 --- [Single Responsibility Prensibi](/solid-single-responsibility)
->
-> 3 --- [Open - Closed Prensibi](/solid-open-closed)
->
-> 4 --- [Liskov Substitution Prensibi](/solid-liskov-substitution)
->
-> 5 --- Interface Segregation Prensibi
->
-> 6 --- [Dependency Inversion Prensibi](/solid-dependency-inversion)
 
 Türkçe olarak **Arayüzlerin Ayrılması** diyebiliriz. Ayrıca Single Responsibility prensibinin arayüzler için geçerli olduğu bir prensip olarak kabul edilebilir.
 

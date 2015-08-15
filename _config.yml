@@ -105,3 +105,28 @@ defaults:
     values:
       layout: project
       comments: 1
+
+# ==== SOLID Series =========
+solid_serie: 
+  title: "SOLID Prensipleri"
+  uri: '/seriler/solid-prensipleri'
+  posts: 
+    - title: "Nedir, Neden İhtiyaç Duyulmuştur?"
+      uri: "/solid-nedir-neden-ihtiyac-duyulmustur"
+
+    - title: 'Single Responsibility'
+      uri: '/solid-single-responsibility'
+
+    - title: 'Open - Closed Prensibi'
+      uri: '/solid-open-closed'
+
+    - title: 'Liskov Substitution Prensibi'
+      uri: '/solid-liskov-substitution'
+
+    - title: 'Interface Segregation Prensibi'
+      uri: '/solid-interface-segregation'
+
+    - title: 'Dependency Inversion Prensibi'
+      uri: '/solid-dependency-inversion'
+
+# ==== Another Series =========

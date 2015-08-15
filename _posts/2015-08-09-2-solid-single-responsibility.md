@@ -1,4 +1,5 @@
 ---
+serie: 'solid_serie'
 title: SOLID - Single Responsibility Prensibi
 permalink: /solid-single-responsibility
 categories: [programming]
@@ -8,20 +9,6 @@ references: [
   'http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074'
 ]
 ---
-
-> Bu yazı ["SOLID Prensipleri"](/seriler/solid-prensipleri) yazı dizisinin bir parçasıdır.
->
-> 1 --- [Nedir, Neden İhtiyaç Duyulmuştur?](/solid-nedir-neden-ihtiyac-duyulmustur)
->
-> 2 --- Single Responsibility Prensibi
->
-> 3 --- [Open - Closed Prensibi](/solid-open-closed)
->
-> 4 --- [Liskov Substitution Prensibi](/solid-liskov-substitution)
->
-> 5 --- [Interface Segregation Prensibi](/solid-interface-segregation)
->
-> 6 --- [Dependency Inversion Prensibi](/solid-dependency-inversion)
 
 Bu prensibe göre bir sınıfta olacak bir değişiklik yalnızca bir nedene bağlı olmalıdır. Yani bu sınıf sadece tek bir görevden sorumlu olmalıdır. 
 
