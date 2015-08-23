@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - Stash İle Mevcut Çalışmaya Ara Vermek
 permalink: /git-stash-ile-mevcut-calismaya-ara-vermek
 categories: [programming]

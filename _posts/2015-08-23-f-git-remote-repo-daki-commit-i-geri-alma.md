@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - Remote Repo'daki Commit'i Geri Alma
 permalink: /git-remote-repo-daki-commit-i-geri-alma
 categories: [programming]

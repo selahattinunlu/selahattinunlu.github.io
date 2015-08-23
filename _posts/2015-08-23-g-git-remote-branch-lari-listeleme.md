@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - Remote Branch'ları Listeleme
 permalink: /git-remote-branch-lari-listeleme
 categories: [programming]

@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git Nedir, Neden Kullanmalıyız?
 permalink: /git-nedir-neden-kullanmaliyiz
 categories: [programming]

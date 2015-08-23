@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - Birden Fazla Repo'ya Commit Gönderme
 permalink: /git-birden-fazla-repo-ya-commit-gonderme
 categories: [programming]

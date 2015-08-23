@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - VPS'de Otomatik Deployment
 permalink: /git-vps-de-otomatik-deployment
 categories: [programming]

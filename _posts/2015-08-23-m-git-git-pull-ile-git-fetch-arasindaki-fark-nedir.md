@@ -1,6 +1,7 @@
 ---
+serie: git_serie
 title: Git - 'git-pull' ile 'git-fetch' Arasındaki Fark Nedir?
-permalink: /git-gui-araclar
+permalink: /git-git-pull-ile-git-fetch-arasindaki-fark-nedir
 categories: [programming]
 tags: [git]
 references: [

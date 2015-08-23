@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - GUI Araçlar
 permalink: /git-gui-araclar
 categories: [programming]

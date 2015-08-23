@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - Öğrenmek İçin Kaynaklar
 permalink: /git-ogrenmek-icin-kaynaklar
 categories: [programming]

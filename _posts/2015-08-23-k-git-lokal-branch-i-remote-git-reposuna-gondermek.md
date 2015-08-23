@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - Lokal Branch'ı Remote Git Reposuna Göndermek
 permalink: /git-lokal-branch-i-remote-git-reposuna-gondermek
 categories: [programming]

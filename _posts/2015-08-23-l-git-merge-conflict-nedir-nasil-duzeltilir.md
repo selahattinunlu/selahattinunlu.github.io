@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - Merge Conflict Nedir, Nasıl Düzeltilir?
 permalink: /git-merge-conflict-nedir-nasil-duzeltilir
 categories: [programming]

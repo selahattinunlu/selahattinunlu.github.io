@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - Yanlış Commit Mesajını Düzeltme
 permalink: /git-yanlis-commit-mesajini-duzeltme
 categories: [programming]

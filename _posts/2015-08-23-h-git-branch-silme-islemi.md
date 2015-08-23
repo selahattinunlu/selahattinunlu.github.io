@@ -1,4 +1,5 @@
 ---
+serie: git_serie
 title: Git - Branch Silme İşlemi
 permalink: /git-branch-silme-islemi
 categories: [programming]
