@@ -6,7 +6,17 @@ Müşterilerim için üzerinde freelance olarak çalıştığım bazı projelere
 
 <hr>
 
-### Chictowndeco.com
+###İki Yıldız Online Alışveriş
+
+ikiyildiz.com olarak hali hazırda çalışan kurumsal sitelerine ek olarak online alışveriş için ayrı bir bölüm hazırlanmasına yönelik talep doğrultusunda yaptıklarım:
+
+- Arayüz Tasarımı
+- Mobil Uyumlu Arayüz Kodlaması
+- E-ticaret için yazılımın geliştirilmesi
+
+[İncelemek İçin Tıklayın](http://ikiyildiz.com/online-alisveris){:target="_blank"}
+
+###Chictowndeco.com
 
 Chictowndeco, ev dekorasyonu ürünleri satışı gerçekleştiren bir firma.
 Bu firma için kurumsal bir web sitesi arayüzü yazılımı ve yönetim paneli yazılımı hazırladım.
@@ -15,14 +25,7 @@ Bu firma için kurumsal bir web sitesi arayüzü yazılımı ve yönetim paneli 
 
 <hr>
 
-### Bektastekstil.com
-
-Bektastekstil.com yetkilileri mevcut olan web siteleri için mobil cihazlar için ayrı bir çalışma talep ettiler. 
-Mobil cihazınızdan bektastekstil.com sitesini ziyaret ederek çalışmamı görüntüleyebilirsiniz.
-
-<hr>
-
-### Bodroom.com.tr
+###Bodroom.com.tr
 
 Bodroom.com.tr için bir yönetim paneli yazılımı tamamlayarak mevcut arayüzleri ile entegrasyonunu gerçekleştirdim.
 
