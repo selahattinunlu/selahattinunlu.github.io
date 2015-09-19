@@ -1,4 +1,5 @@
 ---
+serie: composer_serie
 title: Composer - Paket Geliştirmek
 permalink: /composer-paket-gelistirmek
 categories: [programming]
@@ -82,5 +83,39 @@ Dosyayı kaydettikten sonra komut satırına gidin ve şu komutu çalıştırın
 
 Bu komut sizin için bir `vendor` dizini oluşturacak ve ihtiyaç duyduğunuz bağımlılıkları bu dizin içerisine ekleyecek.
 
-###Dot Files
+###Kodlarınız
+
+Artık paketimize ait kodları yazmaya hazırız. src klasörü içerisinde "Foo.php" adında ilk dosyayı oluşturun ve
+aşağıdaki kodları ekleyin:
+
+{% highlight php %}
+  <?php 
+    namespace Unlu\Foo;
+ 
+    class Foo 
+    {
+ 
+      public function sayHello()
+      {
+        echo 'Hello!';
+      }
+    }
+  ?>
+{% endhighlight %}
+
+###Dökümantasyon
+Son olarak bir `readme.md` dosyası oluşturarak paketinizin dökümanını oluşturabilirsiniz.
+Eğer kodlarınızı github üzerinde barındırıyorsanız reponuza girildiğinde 
+ilk olarak readme.md dosyası gösterilecektir.
+
+###Github ve Packagist'e Göndermek
+Artık bitirdiğiniz paketi Packagist ve Github'a gönderebilirsiniz.
+
+Packagist, geliştirilen diğer paketleri bulabileceğiniz web sitesi ve merkez dizindir.
+
+Geliştirdiğiniz paket kodlarını ilk olarak Github üzerinde oluşturduğunuz reponuza gönderin.
+
+[Packagist](http://packagist.org){:target="_blank"}'e göndermek için "Submit" bölümüne sadece Github reponuzun linkini
+eklemeniz yeterli.
+
 

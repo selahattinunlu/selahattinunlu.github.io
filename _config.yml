@@ -172,4 +172,14 @@ git_serie:
 
     - title: "VPS'de Otomatik Deployment"
       uri: "/git-vps-de-otomatik-deployment"
-# ==== Another Series =========
+
+# ==== Composer Series =========
+composer_serie:
+  title: "Composer"
+  uri: '/seriler/composer'
+  posts: 
+    - title: "Nedir?"
+      uri: "/composer-nedir"
+
+    - title: "Paket Geliştirmek"
+      uri: "/composer-paket-gelistirmek"
