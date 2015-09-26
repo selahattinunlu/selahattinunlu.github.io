@@ -39,7 +39,7 @@ github:
 pages_list:       
   Hakkımda: '/hakkimda'
   Seriler: '/seriler'
-  #Freelance: '/isler'
+  Freelance: '/isler'
   Arşiv: '/arsiv'
   Feed: '/atom.xml'
 
