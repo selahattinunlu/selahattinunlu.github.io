@@ -48,6 +48,14 @@
   margin-top: 0;
 }
 
+.post-content {
+  text-align: left;
+
+  .alert {
+    background: #eee;
+  }
+}
+
 // Meta data line below post title
 .post-date {
   display: block;

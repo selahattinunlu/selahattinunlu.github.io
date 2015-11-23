@@ -11,6 +11,9 @@ title: Anasayfa
         {{ post.title }}
       </a>
     </h3>
+    <section class="post-content">
+      {{ post.content }}
+    </section>
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
   </article>
   {% endfor %}
