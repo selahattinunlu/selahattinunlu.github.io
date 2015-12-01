@@ -6,6 +6,18 @@ Müşterilerim için üzerinde freelance olarak çalıştığım bazı projelere
 
 <hr>
 
+###Teknik Servis Merkezi
+
+İstanbul'da Bosch, Siemens, Baymak, Buderus, Eca gibi markaların beyaz eşyaları, klimaları için teknik servisi hizmet veren bir firma için her markaya özel görünüme sahip web sitelerinin arayüz tasarımı ve mobil uyumlu arayüz kodlamasını gerçekleştirdim.
+
+Bunun dışında şuanda aktif bir şekilde Google Adwords reklam yönetimlerini gerçekleştirip en az maliyetle en fazla müşteriye ulaşmaları için hizmet vermeye devam ediyorum.
+
+[Bosch markasını incelemek için tıklayın](http://bosch.teknikservisimerkezi.com){:target="_blank"}
+
+[Siemens markasını incelemek için tıklayın](http://siemens.teknikservisimerkezi.com){:target="_blank"}
+
+[Baymak markasını incelemek için tıklayın](http://baymak.teknikservisimerkezi.com){:target="_blank"}
+
 ###İki Yıldız Online Alışveriş
 
 ikiyildiz.com olarak hali hazırda çalışan kurumsal sitelerine ek olarak online alışveriş için ayrı bir bölüm hazırlanmasına yönelik talep doğrultusunda yaptıklarım:
