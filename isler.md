@@ -12,11 +12,11 @@ Müşterilerim için üzerinde freelance olarak çalıştığım bazı projelere
 
 Bunun dışında şuanda aktif bir şekilde Google Adwords reklam yönetimlerini gerçekleştirip en az maliyetle en fazla müşteriye ulaşmaları için hizmet vermeye devam ediyorum.
 
-[Bosch markasını incelemek için tıklayın](http://bosch.teknikservisimerkezi.com){:target="_blank"}
+[Bosch markasını incelemek için tıklayın](http://bosch.teknikservicemerkezi.com){:target="_blank"}
 
-[Siemens markasını incelemek için tıklayın](http://siemens.teknikservisimerkezi.com){:target="_blank"}
+[Siemens markasını incelemek için tıklayın](http://siemens.teknikservicemerkezi.com){:target="_blank"}
 
-[Baymak markasını incelemek için tıklayın](http://baymak.teknikservisimerkezi.com){:target="_blank"}
+[Baymak markasını incelemek için tıklayın](http://baymak.teknikservicemerkezi.com){:target="_blank"}
 
 ###İki Yıldız Online Alışveriş
 
