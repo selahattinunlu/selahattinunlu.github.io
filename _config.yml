@@ -187,3 +187,13 @@ composer_serie:
 
     - title: "Paket Geliştirmek"
       uri: "/composer-paket-gelistirmek"
+
+# === Raspberry Pi Series =========
+raspberry_serie:
+  title: "Raspberry Pi"
+  uri: "/seriler/raspberry-pi"
+  posts:
+    - title: "Nedir?"
+      uri: "/raspberry-pi-nedir"
+    - title: "Neler Yapılabilir?"
+      uri: "/raspberry-pi-neler-yapilabilir"

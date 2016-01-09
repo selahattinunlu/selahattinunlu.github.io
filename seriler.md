@@ -2,6 +2,8 @@
 title: Seri Olarak Yazılan Blog Gönderileri
 ---
 
+--- [{{ site.raspberry_serie.title }}]({{ site.raspberry_serie.uri }}){:target="_blank"}
+
 --- [{{ site.composer_serie.title }}]({{ site.composer_serie.uri }}){:target="_blank"}
 
 --- [{{ site.git_serie.title }}]({{ site.git_serie.uri }}){:target="_blank"}
