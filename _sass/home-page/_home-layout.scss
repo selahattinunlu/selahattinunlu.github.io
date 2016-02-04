@@ -25,10 +25,10 @@ body.landing #wrapper {
 
    @include breakpoint ('desktop') {
       height: 70vh;
-      padding-top: 8rem;
-      padding-bottom: 8rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
 
-      @media (min-height: 680px) {
+      @media (min-height: 630px) {
          padding-top: 0;
          padding-bottom: 0;
       }
@@ -43,10 +43,10 @@ body.landing #wrapper {
    @include breakpoint ('desktop') {
       height: 30vh;
       flex-wrap: initial;
-      padding-top: 8rem;
-      padding-bottom: 8rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
 
-      @media (min-height: 680px) {
+      @media (min-height: 630px) {
          padding-top: 0;
          padding-bottom: 0;
       }
