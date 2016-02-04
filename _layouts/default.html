@@ -1,51 +1,9 @@
 <!DOCTYPE html>
 <html lang="tr-TR">
-
-	{% include head.html %}
-
-	<body>
-
-		<div class="container content">
-			<header class="masthead">
-				<h3 class="masthead-title">
-					<a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-				</h3>
-
-				<div class="masthead-nav">
-					{% for page in site.pages_list %}
-						<a href="{{ page[1]  }}">{{ page[0] }}</a>
-					{% endfor %}
-				</div>
-
-				<div class="social-networks">
-					<a href="http://twitter.com/selahattinunlu" target="_blank" class="social-networks-item twitter">
-						<i class="fa fa-twitter"></i>
-					</a>
-
-					<a href="http://instagram.com/selahattin.unlu" target="_blank" class="social-networks-item instagram">
-						<i class="fa fa-instagram"></i>
-					</a>
-
-					<a href="http://github.com/selahattinunlu" target="_blank" class="social-networks-item github">
-						<i class="fa fa-github"></i>
-					</a>
-					<a href="https://www.youtube.com/channel/UCD0U9j2mQW3navwqzw0K2UQ" target="_blank" class="social-networks-item youtube">
-						<i class="fa fa-youtube"></i>
-					</a>
-				</div>
-			</header>
-
-			<main>
-				{{ content }}
-			</main>
-
-			<footer class="footer">
-				<small>
-					&copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> - All rights reserved.
-				</small>
-			</footer>
-		</div>
-
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	</body>
+   <head>
+      {% include head.html %}
+   </head>
+   <body class="app">
+      {{ content }}
+   </body>
 </html>

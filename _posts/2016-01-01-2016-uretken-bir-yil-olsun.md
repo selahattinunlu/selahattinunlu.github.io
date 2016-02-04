@@ -1,8 +1,7 @@
 ---
 title: 2016 Üretken Bir Yıl Olsun
 permalink: /2016-uretken-bir-yil-olsun
-references: [
-]
+tags: [after-year]
 ---
 
 Efendim bir yılı daha geride bıraktık. Yılın başında belirlediğim hedeflerimin bazılarını gerçekleştiremesem de genel olarak iyiydi diyelim :)

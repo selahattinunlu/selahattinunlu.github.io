@@ -4,8 +4,6 @@ title: Git - VPS'de Otomatik Deployment
 permalink: /git-vps-de-otomatik-deployment
 categories: [programming]
 tags: [git]
-references: [
-]
 ---
 
 FTP gerçekten işkence! Bunun yerine Git kullanarak değişiklik yaptığımız dosyaların otomatik olarak sunucuya aktarılmasını sağlayabiliriz. 

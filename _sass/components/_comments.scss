@@ -1,0 +1,8 @@
+.comments {
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+
+   @include breakpoint ('desktop') {
+      margin-bottom: 0;
+   }
+}

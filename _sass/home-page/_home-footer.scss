@@ -1,0 +1,82 @@
+.footer-item {
+   flex-grow: 1;
+   flex-basis: 50%;
+   background: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   @include breakpoint ('desktop') {
+      flex-basis: 25%;
+   }
+
+   &:hover {
+      .icon:before {
+         animation: shine .75s;
+      }
+   }
+
+   &:last-of-type {
+      border: none;
+      flex-grow: 0;
+
+      @include breakpoint ('desktop') {
+         flex-grow: 1;
+      }
+   }
+
+   .body {
+      visibility: hidden;
+   }
+
+   .icon {
+      margin-bottom: 1rem;
+      position: relative;
+      overflow: hidden;
+      transition: all .5s;
+
+      img {
+         width: 50px;
+         
+         @include breakpoint ('tablet') {
+            width: initial;
+         }
+      }
+
+      &::before {
+         position: absolute;
+         top: 0;
+         left: -75%;
+         z-index: 2;
+         display: block;
+         content: '';
+         width: 50%;
+         height: 100%;
+         background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+         transform: skewX(-25deg);
+      }
+   }
+
+   .title {
+      font-size: 1.2rem;
+      color: #666;
+      
+      @include breakpoint ('tablet') {
+         font-size: 1.6rem
+      }
+
+      @include breakpoint ('desktop') {
+         font-size: 1.8rem;
+      }
+   }
+}
+
+// keyframes
+
+@keyframes shine {
+   100% {
+      left: 125%;
+   }
+}

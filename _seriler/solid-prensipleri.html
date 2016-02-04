@@ -1,0 +1,11 @@
+---
+title: SOLID Prensipleri
+---
+
+{% for post in site.posts reversed %}
+   {% if post.serie == 'solid_serie' %}
+      <li>
+         <a href="{{ post.permalink }}">{{ post.title }}</a>
+      </li>
+   {% endif %}
+{% endfor %}

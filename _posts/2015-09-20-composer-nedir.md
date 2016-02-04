@@ -3,6 +3,7 @@ serie: composer_serie
 title: Composer - Nedir?
 permalink: /composer-nedir
 categories: [programming]
+tags: [composer, php]
 references: [
   'https://getcomposer.org/'
 ]

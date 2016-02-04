@@ -1,0 +1,43 @@
+.list-box {
+   @extend .box;
+   margin-bottom: 1rem;
+
+   &:last-of-type {
+      margin-bottom: 0;
+   }
+
+   header {
+      border-top-left-radius: .3em;
+      border-top-right-radius: .3em;
+      background: $primary-color;
+      color: #fff;
+      padding: 1.5rem;
+      font-size: 1.2rem;
+   }
+
+   .body {
+      padding: 1.5rem;
+
+      a {
+         font-size: 1rem;
+         color: #666;
+         border-bottom: 1px dashed #eee;
+         padding: 1rem 0;
+         transition: all .5s;
+         display: block;
+
+         &:hover {
+            color: $primary-color;
+         }
+
+         &:first-of-type {
+            padding-top: 0;
+         }
+
+         &:last-of-type {
+            padding-bottom: 0;
+            border: 0;
+         }
+      }
+   }
+}

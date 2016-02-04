@@ -1,0 +1,59 @@
+.social-list {
+   display: flex;
+   justify-content: center;
+
+   .item {
+      color: $facebook-color;
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      border: 2px solid $facebook-color;
+      border-radius: 100%;
+      margin-right: .5rem;
+      transition: all .5s;
+      padding: 0 !important;
+      font-size: 1.4rem !important;
+      opacity: .9;
+   
+      &:last-of-type {
+         margin-right: 0;
+      }
+
+      @mixin makeSocialButton ($color) {
+         border: 2px solid $color !important;
+         color: #fff;
+         background: $color;
+
+         &:hover {
+            background: $color;
+            color: #fff;
+            opacity: 1;
+         }
+      }
+
+      &.facebook {
+         @include makeSocialButton($facebook-color);
+      }
+
+      &.twitter {
+         @include makeSocialButton($twitter-color);
+      }
+
+      &.instagram {
+         @include makeSocialButton($instagram-color);
+      }
+
+      &.github {
+         @include makeSocialButton($github-color);
+      }
+
+      &.youtube {
+         @include makeSocialButton($youtube-color);
+      }
+
+      &.googleplus {
+         @include makeSocialButton($googleplus-color);
+      }
+   }
+}

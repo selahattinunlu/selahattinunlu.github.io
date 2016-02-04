@@ -3,7 +3,7 @@ serie: 'solid_serie'
 title: SOLID - Interface Segregation Prensibi
 permalink: /solid-interface-segregation
 categories: [programming]
-tags: [yazilim-prensipleri, solid]
+tags: [solid, programming, principles]
 references: [
   'https://en.wikipedia.org/wiki/Interface_segregation_principle',
   'http://www.turkayurkmez.com/arayuzlerin-ayrimi-prensibi-isp-interface-segregation-principle/',
@@ -16,8 +16,8 @@ references: [
 
 Türkçe olarak **Arayüzlerin Ayrılması** diyebiliriz. Ayrıca Single Responsibility prensibinin arayüzler için geçerli olduğu bir prensip olarak kabul edilebilir.
 
-<div class="alert">
-  <h3>Tanım</h3>
+<div class="alert-box">
+  <h3 class="title">Tanım</h3>
 
   Nesneler kullanmadığı metodun yer aldığı bir interface'i uygulamaya zorlanmamalıdır.
 </div>
@@ -123,8 +123,8 @@ Tanımda yer aldığı gibi nesneler kullanmadığı, ihtiyaç duymadığı bir 
 
 Bu sefer sorun çözülmüş gibi duruyor değil mi? Hayır! Bu sefer de Open-Closed prensibini ihlal etmiş olduk. Yeni bir işçi türü eklendiğinde ve Robot gibi dinlemeye ihtiyacı yoksa? Fabrika sınıfının kodlarına müdahale etmemiz gerekecek. 
 
-<div class="alert">
-  <h3>Hatırlatma</h3>
+<div class="alert-box">
+  <h3 class="title">Hatırlatma</h3>
 
   Open-Closed prensibi, bir sınıfın genişlemeye, gelişmeye açık, değişime kapalı olmasıdır.
 </div>

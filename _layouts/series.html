@@ -1,12 +1,17 @@
 ---
-layout: default
+layout: page
 ---
 
-<h3>{{ page.title }}</h3>
-<hr>
+<div class="section p-b-0">
+   <h3 class="title">{{ page.title }}</h3>
+   <div class="description">
+      {{ content }}
+      
+      <div class="m-b-2"></div>
+      
+      <blockquote>
+         Seri olarak yazılan diğer gönderileri incelemek için <a href="/seriler">tıklayın.</a>
+      </blockquote>
+   </div>
+</div>
 
-{{ content }}
-
-<blockquote>
-	Seri olarak yazılan diğer gönderileri incelemek için <a href="/seriler">tıklayın.</a>
-</blockquote>

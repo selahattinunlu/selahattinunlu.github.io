@@ -3,7 +3,7 @@ serie: 'solid_serie'
 title: SOLID - Open - Closed Prensibi
 permalink: /solid-open-closed
 categories: [programming]
-tags: [yazilim-prensipleri, solid]
+tags: [solid, programming, principles]
 references: [
   'https://en.wikipedia.org/wiki/Open/closed_principle',
   'http://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600',

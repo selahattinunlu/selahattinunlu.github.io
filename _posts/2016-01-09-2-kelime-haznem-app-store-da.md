@@ -2,9 +2,8 @@
 title: Kelime Haznem - App Store'da
 permalink: /kelime-haznem-app-store-da
 categories: [programming]
-tags: [ios, ionic, parse, programming]
-references: [
-]
+tags: [ios, cordova, ionic, parse, programming, projects]
+image: kelime-haznem/kelime-haznem.jpg
 ---
 
 Yeni yılı “Denemek->Yanılmak->Öğrenmek” şeklinde sürekli tekrar eden bir zincir sonucunda “Üretmek” temeline kurmak istedim. Çünkü bizler sürekli olarak kendimizi geliştirebilen, öğrenebilen ve her ne kadar hazıra alıştırılsak da üretebilen varlıklarız. 

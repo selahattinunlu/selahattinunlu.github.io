@@ -4,8 +4,6 @@ title: Git - Tag Ekleme/Silme/Listeleme İşlemleri
 permalink: /git-tag-ekleme-silme-listeleme-islemleri
 categories: [programming]
 tags: [git]
-references: [
-]
 ---
 
 ###Etiketleri Listelemek

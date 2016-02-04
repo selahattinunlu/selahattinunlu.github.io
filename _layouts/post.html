@@ -1,60 +1,91 @@
 ---
-layout: default
+layout: blog
 ---
 
-<article class="single-post">
-  <header>
-    <h1 class="post-title">{{ page.title }}</h1>
-    <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
-  </header>
-  
-  {{ content }}
+<article class="article-box">
+   {% if page.image %}
+      <div class="post-image" style="background: url(public/img/posts/{{ page.image }})"></div>
+   {% endif %}
 
-  {% include twitter_plug.html %}
+   <div class="post-inner">
+      <div class="post-header">
+         <h3 class="post-title">{{ page.title }}</h3>
+         <span class="post-date">
+            {{ page.date | date_to_string }}
+         </span>
+      </div>
 
-    <!-- seri linkleri -->
-    {% if page.serie %}
-    <blockquote>
-      <p>Bu yazı <a href="{{ site[page.serie].uri }}">{{ site[page.serie].title }}</a> yazı dizisinin bir parçasıdır.</p>
+      <div class="post-body">
+         {{ content }}
 
-      {% for post in site[page.serie].posts %}
-        {% if page.permalink == post.uri %}
-          <p>— {{ post.title }}</p>
-        {% else %}
-          <p>— <a href="{{ post.uri }}">{{ post.title }}</a></p>
-        {% endif %}      
-      {% endfor %}
-    </blockquote>
-    {% endif %}
-    <!-- seri linkleri -->
+         <!-- seri linkleri -->
+         {% if page.serie %}
+            <div class="serie-box">
+               <p class="title">
+                  Serinin diğer yazıları:
+               </p>
 
-  
-  {% if page.references %}
-    <hr>
-    <h2>Referanslar</h2>
+               {% for post in site.posts reversed %}
+                  {% if post.serie == page.serie %}
+                     {% if page.permalink == post.permalink %}
+                        <p class="m-b-0">— {{ post.title }}</p>
+                        {% else %}
+                        <p class="m-b-0">— <a href="{{ post.permalink }}">{{ post.title }}</a></p>
+                     {% endif %}    
+                  {% endif %}
+               {% endfor %}
+            </div>
+         {% endif %}
+         <!-- seri linkleri -->
+         
+         {% if page.references %}
+            <h4 class="m-b-1">Referanslar</h4>
 
-    {% for reference in page.references %}
-    <li><a href="{{ reference }}" target="_blank">{{ reference }}</a></li>
-    {% endfor %}
-    <hr>
-  {% endif %}
+            {% for reference in page.references %}
+               <li><a href="{{ reference }}" target="_blank">{{ reference }}</a></li>
+            {% endfor %}
+         {% endif %}
 
+         <div class="post-social-sharing">
+            <button 
+               class="sharer facebook" 
+               data-sharer="facebook" 
+               data-url="{{ site.url }}{{ page.url }}">
+               <i class="fa fa-facebook"></i>
+            </button>
+            <button 
+               class="sharer twitter" 
+               data-sharer="twitter" 
+               data-title="{{ page.title }}" 
+               data-via="selahattinunlu" 
+               data-hashtags="" 
+               data-url="{{ site.url }}{{ page.url }}">
+               <i class="fa fa-twitter"></i>
+            </button>
+            <button 
+               class="sharer googleplus" 
+               data-sharer="googleplus" 
+               data-url="{{ site.url }}{{ page.url }}">
+               <i class="fa fa-google-plus"></i>
+            </button>
+            <button 
+               class="sharer linkedin" 
+               data-sharer="linkedin" 
+               data-url="{{ site.url }}{{ page.url }}">
+               <i class="fa fa-linkedin"></i>
+            </button>
+            <button 
+               class="sharer pocket" 
+               data-sharer="pocket" 
+               data-title="{{ page.title }}" 
+               data-url="{{ site.url }}{{ page.url }}">
+               <i class="fa fa-get-pocket"></i>
+            </button>
+         </div>
+      </div>
+   </div>
 </article>
 
-{% if site.related_posts != empty %}
-<aside class="related">
-  <h2>Diğer Makaleler</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:5 %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</aside>
-{% endif %}
-
-{% include comments.html %}
+<div class="comments">
+   {% include comments.html %}
+</div>

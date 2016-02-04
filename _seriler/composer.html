@@ -1,0 +1,11 @@
+---
+title: Composer
+---
+
+{% for post in site.posts reversed %}
+   {% if post.serie == 'composer_serie' %}
+      <li>
+         <a href="{{ post.permalink }}">{{ post.title }}</a>
+      </li>
+   {% endif %}
+{% endfor %}

@@ -1,0 +1,12 @@
+.pagination {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   display: flex;
+   justify-content: center;
+   margin-top: 0;
+   margin-bottom: 0;
+
+   a {
+      color: $primary-color;
+   }
+}

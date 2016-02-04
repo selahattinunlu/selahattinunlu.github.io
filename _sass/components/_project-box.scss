@@ -1,0 +1,82 @@
+.project-box {
+   background: #eee;
+   background-size: cover !important;
+   background-repeat: no-repeat !important;
+   background-position: center center !important;
+   height: 300px;
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &.pane {
+      background: #333;
+
+      &.secondary {
+         background: $secondary-color !important;
+         color: #fff;
+      }
+
+      .title {
+         font-size: 1.4rem;
+
+         @include breakpoint ('tablet') {
+            font-size: 1.6rem;
+         }
+      }
+      
+      .body {
+         transform: translateY(0);
+      }
+   }
+
+   .body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      z-index: 200;
+      position: relative;
+      transform: translateY(300%);
+      transition: all .5s;
+   }
+
+   .title {
+      text-align: center;
+   }
+
+   &:before {
+      background: $secondary-color;
+      opacity: 0;
+      transform: translate3d(0,50%,0);
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      transition: all .5s;
+      left: 0;
+      top: 0;
+   }
+
+   &:hover {
+      &:before {
+         opacity: 1;
+         transform: translate3d(0, 0, 0);
+      }
+
+      .body {
+         transform: translateX(0);
+      }
+   }
+
+   .button {
+      background: #fff;
+      color: #444;
+      border: none;
+      border-radius: 5em;
+      padding: 1rem 4rem;
+      display: block;
+   }
+}

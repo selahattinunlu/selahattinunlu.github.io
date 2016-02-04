@@ -2,10 +2,22 @@
 title: Seri Olarak Yazılan Blog Gönderileri
 ---
 
---- [{{ site.raspberry_serie.title }}]({{ site.raspberry_serie.uri }}){:target="_blank"}
-
---- [{{ site.composer_serie.title }}]({{ site.composer_serie.uri }}){:target="_blank"}
-
---- [{{ site.git_serie.title }}]({{ site.git_serie.uri }}){:target="_blank"}
-
---- [{{ site.solid_serie.title }}]({{ site.solid_serie.uri }}){:target="_blank"}
+<div class="section">
+   <div class="title">Seriler</div>
+   <div class="description">
+      <ul>
+         <li>
+            <a href="{{ site.baseurl }}seriler/raspberry-pi">Raspberry Pi</a>
+         </li>
+         <li>
+            <a href="{{ site.baseurl }}seriler/composer">Composer</a>
+         </li>
+         <li>
+            <a href="{{ site.baseurl }}seriler/git">Git</a>
+         </li>
+         <li>
+            <a href="{{ site.baseurl }}seriler/solid-prensipleri">Solid Prensipleri</a>
+         </li>
+      </ul>
+   </div>
+</div>

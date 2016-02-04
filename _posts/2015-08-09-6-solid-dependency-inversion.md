@@ -3,7 +3,7 @@ serie: 'solid_serie'
 title: SOLID - Dependency Inversion Prensibi
 permalink: /solid-dependency-inversion
 categories: [programming]
-tags: [yazilim-prensipleri, solid]
+tags: [solid, programming, principles]
 references: [
   'https://en.wikipedia.org/wiki/Dependency_inversion_principle',
   'http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872',
@@ -13,8 +13,8 @@ references: [
 ]
 ---
 
-<div class="alert">
-  <h3>Dikkat</h3> Dependency <strong>Inversion</strong> ile Dependency <strong>Injection</strong>'ı karıştırmayın!
+<div class="alert-box">
+  <h3 class="title">Dikkat</h3> Dependency <strong>Inversion</strong> ile Dependency <strong>Injection</strong>'ı karıştırmayın!
 </div>
 
 ### Tanımlama

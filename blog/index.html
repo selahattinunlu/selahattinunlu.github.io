@@ -1,0 +1,28 @@
+---
+layout: blog
+title: Blog
+---
+
+{% for post in paginator.posts %}
+   <article class="article-box">
+      {% if post.image %}
+         <a href="{{ post.url }}">
+            <div class="post-image" style="background: url(public/img/posts/{{ post.image }})">
+            </div>
+         </a>
+      {% endif %}
+
+      <div class="post-inner">
+         <div class="post-header">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="post-title">
+               {{ post.title }}
+            </a>
+            <span class="post-date">
+               {{ post.date | date_to_string }}
+            </span>
+         </div>
+      </div>
+   </article>
+{% endfor %}
+
+{% include paginator.html %}

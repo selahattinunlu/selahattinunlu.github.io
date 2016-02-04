@@ -1,0 +1,27 @@
+.alert-box {
+   padding: 2rem;
+   margin-bottom: 2rem;
+   border-radius: .25rem;
+   background: #f5f5f5;
+
+   .title {
+      margin-top: 0 !important;
+      margin-bottom: 1rem !important;
+   }
+
+   &.is-warning {
+      background: orange - 10;
+   }
+
+   &.is-danger {
+      background: red - 10;
+   }
+
+   &.is-info {
+      background: blue + 20;
+   }
+
+   &.is-success {
+      background: green + 20;
+   }
+}

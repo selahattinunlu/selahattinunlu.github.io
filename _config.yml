@@ -9,6 +9,7 @@ title:               Selahattin Ünlü
 tagline:             Full Time Developer && Part Time Student
 url:                 http://selahattinunlu.com
 paginate:            10
+paginate_path:      "blog/page:num"
 baseurl:             ""
 
 # Assets
@@ -45,18 +46,14 @@ pages_list:
   Feed: '/atom.xml'
 
 collections:
+  # Etiketlere Göre İçerikler
+  etiketler:
+    output: true
+    permalink: etiket/:path/
   # Blog Serileri
   seriler:
     output: true
     permalink: seriler/:path/
-  # Projeler
-  projeler:
-    output: true
-    permalink: projeler/:path/
-  # İşler
-  isler:
-    output: true
-    permalink: isler/:path/
   # Demolar
   demo:
     output: true
@@ -67,7 +64,7 @@ defaults:
   # posts
   - scope:
       path: ''
-      type: post
+      type: posts
     values:
       layout: post
       comments: 1
@@ -81,119 +78,14 @@ defaults:
   # drafts
   - scope:
       path: ''
-      type: draft
+      type: drafts
     values:
       layout: post
       comments: 1
   # pages
   - scope:
       path: ''
-      type: page
+      type: pages
     values:
       layout: page
       comments: 0
-  # works
-  - scope:
-      path: ''
-      type: isler
-    values:
-      layout: work
-      comments: 1
-  # projects
-  - scope:
-      path: ''
-      type: projeler
-    values:
-      layout: project
-      comments: 1
-
-# ==== SOLID Series =========
-solid_serie: 
-  title: "SOLID Prensipleri"
-  uri: '/seriler/solid-prensipleri'
-  posts: 
-    - title: "Nedir, Neden İhtiyaç Duyulmuştur?"
-      uri: "/solid-nedir-neden-ihtiyac-duyulmustur"
-
-    - title: 'Single Responsibility'
-      uri: '/solid-single-responsibility'
-
-    - title: 'Open - Closed Prensibi'
-      uri: '/solid-open-closed'
-
-    - title: 'Liskov Substitution Prensibi'
-      uri: '/solid-liskov-substitution'
-
-    - title: 'Interface Segregation Prensibi'
-      uri: '/solid-interface-segregation'
-
-    - title: 'Dependency Inversion Prensibi'
-      uri: '/solid-dependency-inversion'
-
-# ==== Git Series =========
-git_serie:
-  title: "Git"
-  uri: '/seriler/git'
-  posts: 
-    - title: "Nedir, Neden Kullanmalıyız?"
-      uri: "/git-nedir-neden-kullanmaliyiz"
-
-    - title: "Öğrenmek İçin Kaynaklar"
-      uri: "/git-ogrenmek-icin-kaynaklar"
-
-    - title: "GUI Araçlar"
-      uri: "/git-gui-araclar"
-
-    - title: "Yanlış Commit Mesajını Düzeltme"
-      uri: "/git-yanlis-commit-mesajini-duzeltme"
-
-    - title: "Stash İle Mevcut Çalışmaya Ara Vermek"
-      uri: "/git-stash-ile-mevcut-calismaya-ara-vermek"
-
-    - title: "Remote Repo'daki Commiti Geri Alma"
-      uri: "/git-remote-repo-daki-commit-i-geri-alma"
-
-    - title: "Remote Branchları Listeleme"
-      uri: "/git-remote-branch-lari-listeleme"
-
-    - title: "Branch Silme İşlemi"
-      uri: "/git-branch-silme-islemi"
-
-    - title: "Lokal Branchı Remote Git Reposuna Göndermek"
-      uri: "/git-lokal-branch-i-remote-git-reposuna-gondermek"
-
-    - title: "Merge Conflict Nedir, Nasıl Düzeltilir?"
-      uri: "/git-merge-conflict-nedir-nasil-duzeltilir"
-
-    - title: "'git pull' ile 'git fetch' Arasındaki Fark Nedir?"
-      uri: "/git-git-pull-ile-git-fetch-arasindaki-fark-nedir"
-
-    - title: "Birden Fazla Repoya Commit Gönderme"
-      uri: "/git-birden-fazla-repo-ya-commit-gonderme"
-
-    - title: "VPS'de Otomatik Deployment"
-      uri: "/git-vps-de-otomatik-deployment"
-
-    - title: "Tag Ekleme/Silme/Listeleme İşlemleri"
-      uri: "/git-tag-ekleme-silme-listeleme-islemleri"
-
-# ==== Composer Series =========
-composer_serie:
-  title: "Composer"
-  uri: '/seriler/composer'
-  posts: 
-    - title: "Nedir?"
-      uri: "/composer-nedir"
-
-    - title: "Paket Geliştirmek"
-      uri: "/composer-paket-gelistirmek"
-
-# === Raspberry Pi Series =========
-raspberry_serie:
-  title: "Raspberry Pi"
-  uri: "/seriler/raspberry-pi"
-  posts:
-    - title: "Nedir?"
-      uri: "/raspberry-pi-nedir"
-    - title: "Neler Yapılabilir?"
-      uri: "/raspberry-pi-neler-yapilabilir"

@@ -1,0 +1,158 @@
+.project-detail-page-box {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: #fff;
+   z-index: 300;
+   transform: translateY(200%);
+   transition: all 600ms ease-out;
+   opacity: 0;
+   cursor: pointer;
+   
+   .body {
+      overflow-y: scroll;
+      height: 100%;
+
+      @include breakpoint ('desktop') {
+         overflow-y: initial;
+         display: flex;
+         flex-direction: row;
+      }
+   }
+
+   &.is-open {
+      transform: translateY(0);
+      opacity: 1;
+   }
+
+   button[data-trigger="dismiss"] {
+      position: fixed;
+      top: .5rem;
+      right: 1rem;
+      border: none;
+      color: #aaa;
+      font-size: 2rem;
+      background: transparent;
+      font-weight: 100;
+      z-index: 400;
+   }
+   
+   .column {
+      background: #f7f7f7;
+      padding: 4rem 2rem;
+
+      @include breakpoint ('tablet') {
+         padding: 5rem;
+      }
+
+      @include breakpoint ('desktop') {
+         overflow: scroll;
+         flex-basis: 50%;
+         max-width: 50%;
+      }
+
+      &.is-blur {
+         filter: blur(10px);
+      }
+
+      &.is-description {
+         background: #fff;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+      }
+
+      p {
+         font-size: 1rem;
+         line-height: 1.8;
+         color: #666;
+         margin-bottom: 2rem;
+      }
+   }
+
+   .title {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #444;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+
+      @include breakpoint ('tablet') {
+         font-size: 2.6rem;
+      }
+   }
+
+   .sub-title {
+      @extend .title;
+      font-size: 2rem;
+      font-weight: 600;
+   }
+
+   .title,
+   .sub-title {
+      &.center {
+         text-align: center;
+      }
+   }
+
+   .description {
+      font-size: .9rem;
+      color: #666;
+      line-height: 2;
+      margin-bottom: 1rem;
+
+      @include breakpoint ('tablet') {
+         font-size: 1rem;
+      }
+   }
+
+   .tags {
+      span {
+         border: 2px solid #eee;
+         padding: .5rem 1rem;
+         display: inline-block;
+         margin-bottom: .5rem;
+         border-radius: .3em;
+         margin-right: .5rem;
+         transition: all .5s;
+
+         &:hover {
+            background: #eee;
+            color: #444;
+            border-color: #eee;
+         }
+      }
+   }
+
+   img {
+      &.full {
+         max-width: 100%;
+      }
+
+      &.center {
+         display: block;
+         margin: 0 auto;
+      }
+   }
+
+   .button {
+      background: $secondary-color;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: inline-block;
+      border-radius: .3rem;
+      font-size: .9rem;
+      transition: all .5s;
+
+      &:hover {
+         background: $secondary-color + 10;
+      }
+
+      @include breakpoint ('tablet') {
+         font-size: 1rem;
+         padding: .5rem 2rem;
+      }
+   }
+}

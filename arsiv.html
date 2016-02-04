@@ -1,0 +1,20 @@
+---
+title: Arşiv
+layout: blog
+---
+
+<article class="article-box">
+   <div class="post-inner">
+      <a href="" class="post-title fixed-color">Arşiv</a>
+      <div class="m-b-2"></div>
+
+      <div class="archive-list">
+         {% for post in site.posts %}
+         <div class="item">
+            <a href="{{ post.url }}" title="{{ post.title }}" class="item-title">{{ post.title }}</a>
+            <span class="item-date">{{ post.date | date_to_string }}</span>
+         </div>
+         {% endfor %}
+      </div>
+   </div>
+</article>

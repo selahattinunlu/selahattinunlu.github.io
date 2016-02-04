@@ -1,0 +1,12 @@
+{% if site.related_posts %}
+   <div class="list-box">
+      <header>İlgini Çekebilecek Diğer Yazılar</header>
+      <div class="body">
+         {% for post in site.related_posts limit:5 %}
+            <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+               {{ post.title }}
+            </a>
+         {% endfor %}
+      </div>
+   </div>
+{% endif %}

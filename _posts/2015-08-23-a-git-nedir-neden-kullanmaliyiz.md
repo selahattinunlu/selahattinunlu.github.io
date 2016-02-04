@@ -11,8 +11,8 @@ references: [
 
 ###Nedir?
 
-<div class="alert">
-	<h3>Wikipedia</h3>
+<div class="alert-box">
+	<h3 class="title">Wikipedia</h3>
 
 	<p>GIT; yazılım geliştirme süreçlerinde kullanılan, hız odaklı, dağıtık çalışan bir sürüm kontrol ve kaynak kod yönetim sistemidir. İlk sürümü Linux çekirdeği'nin geliştirilmesinde kullanılmak üzere 2005 yılında bizzat Linus Torvalds tarafından tasarlanıp geliştirilmiş, son Eclipse kullanıcı topluluğu anketi verilerine göre 2013 yılı itibariyle %30 pazar payına ulaşmıştır.</p>
 

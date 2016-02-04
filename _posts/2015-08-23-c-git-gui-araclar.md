@@ -6,8 +6,8 @@ categories: [programming]
 tags: [git]
 ---
 
-<div class="alert">
-	<h3>Gui</h3>
+<div class="alert-box">
+	<h3 class="title">Gui</h3>
 	Grafiksel Kullanıcı Arayüzü (ing. Graphical User Interface; GUI), bilgisayarlarda işletilen komutlar ve bunların çıktıları yerine simgeler, pencereler, düğmeler ve panellerin tümünü ifade etmek için kullanılan genel addır.
 </div>
 

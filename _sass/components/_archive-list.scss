@@ -1,0 +1,27 @@
+.archive-list {
+   .item {
+      margin-bottom: 2rem;
+
+      &:hover {
+         .item-title {
+            color: $primary-color;
+         }
+      }
+
+      &:last-of-type {
+         margin: 0;
+      }
+
+      .item-title {
+         display: block;
+         color: #666;
+         font-size: 1.2rem;
+         transition: all .5s;
+      }
+
+      .item-date {
+         font-size: .9rem;
+         color: #aaa;
+      }
+   }
+}

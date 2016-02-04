@@ -1,0 +1,27 @@
+{
+  "name": "selahattinunlu.com",
+  "authors": [
+    "Selahattin Ünlü <selahattin.unlu@yandex.com>"
+  ],
+  "description": "Kişisel Web Sayfam",
+  "dependencies": {
+    "animate.css": "~3.5.1",
+    "typed.js": "~1.1.1",
+    "sharer.js": "sharerjs#~0.2.10",
+    "font-awesome": "~4.5.0"
+  },
+  "main": "",
+  "moduleType": [
+    "amd",
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

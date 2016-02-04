@@ -2,7 +2,7 @@
 title: Jquery İle Her Ajax İşleminde Çalışacak Global Tanımlamalar Nasıl Yapılır?
 permalink: /jquery-ile-her-ajax-isleminde-calisacak-global-tanimlamalar-nasil-yapilir
 categories: [jquery]
-tags: [ipucu]
+tags: [jquery, javascript]
 ---
 
 jQuery'nin ```.ajaxStart(), .ajaxStop(), .ajaxComplete(), .ajaxError(), .ajaxSuccess(), .ajaxSend()``` hepsinden ziyade ```.ajaxSetup()``` gibi hayat kurtaran fonksiyonlarından haberi olmayan geliştiriciler için oldukça faydalı olacağına inandığım bir konu ile giriş yapmaktan istedim yeni bloğumun ilk yazısına.

@@ -3,7 +3,7 @@ serie: 'solid_serie'
 title: SOLID - Nedir, Neden İhtiyaç Duyulmuştur?
 permalink: /solid-nedir-neden-ihtiyac-duyulmustur
 categories: [programming]
-tags: [yazilim-prensipleri, solid]
+tags: [solid, programming, principles]
 references: [
   'https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)',
   'http://www.codemag.com/article/1001061',

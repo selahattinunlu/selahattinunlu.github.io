@@ -3,9 +3,7 @@ serie: raspberry_serie
 title: Raspberry Pi - Neler Yapılabilir?
 permalink: /raspberry-pi-neler-yapilabilir
 categories: [programming]
-tags: [raspberrypi, electronic]
-references: [
-]
+tags: [raspberry-pi, electronic]
 ---
 
 Bu minik, sevimli ve yetenekli kart ile yapılabilecekler hayal gücünüzle sınırlı desem sanırım yanlış olmaz.

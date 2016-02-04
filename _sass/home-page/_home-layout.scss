@@ -1,0 +1,54 @@
+html,
+body,
+body.landing #wrapper {
+   width: 100%;
+   height: 100%;
+}
+
+.home-body {
+   flex-direction: column;
+}
+
+.home-body,
+.home-hero,
+.home-footer {
+   display: flex;
+}
+
+.home-hero {
+   background: #777;
+   height: 30vh;
+   color: #fff;
+   align-items: center;
+   background: $primary-color url(../images/background-by-mackenziechild.png);
+   background-size: 50%;
+
+   @include breakpoint ('desktop') {
+      height: 70vh;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+
+      @media (min-height: 680px) {
+         padding-top: 0;
+         padding-bottom: 0;
+      }
+   }
+}
+
+.home-footer {
+   background: #fff;
+   height: 70vh;
+   flex-wrap: wrap;
+
+   @include breakpoint ('desktop') {
+      height: 30vh;
+      flex-wrap: initial;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+
+      @media (min-height: 680px) {
+         padding-top: 0;
+         padding-bottom: 0;
+      }
+   }
+}

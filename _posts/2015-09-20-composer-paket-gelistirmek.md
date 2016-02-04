@@ -3,6 +3,7 @@ serie: composer_serie
 title: Composer - Paket Geliştirmek
 permalink: /composer-paket-gelistirmek
 categories: [programming]
+tags: [composer, php]
 references: [
   'http://culttt.com/2014/05/07/create-psr-4-php-package/'
 ]
@@ -66,8 +67,8 @@ listelendiği bölümdür. Örnek olarak testleri de yazacağınızı varsayarsa
 Ve son olarak `autoload`, paketinizin otomatik yüklemeleri nasıl yapacağını belirtir.
 PHP-Fig tarafından oluşturulan standartlarda şuan önerilen autoloading standardı `psr-4`dür.
 
-<div class="alert"> 
-   <h3>Dikkat</h3>
+<div class="alert-box"> 
+   <h3 class="title">Dikkat</h3>
    21.10.2014 itibariyle `psr-0` autoloading standardı <a href="http://www.php-fig.org/psr/psr-0/" target="_blank">önerilmiyor</a>. Alternatif olarak `psr-4` önerilmektedir.
 </div>
 

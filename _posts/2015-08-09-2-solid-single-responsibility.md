@@ -3,7 +3,7 @@ serie: 'solid_serie'
 title: SOLID - Single Responsibility Prensibi
 permalink: /solid-single-responsibility
 categories: [programming]
-tags: [yazilim-prensipleri, solid]
+tags: [solid, programming, principles]
 references: [
   'https://en.wikipedia.org/wiki/Single_responsibility_principle',
   'http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074'

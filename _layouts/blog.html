@@ -1,0 +1,21 @@
+---
+layout: master
+---
+
+<div class="two-columns-layout">
+   <!-- two-columns-content -->
+   <div class="two-columns-content">
+      {{ content }}
+   </div>
+
+   <!-- two-columns-sidebar -->
+   <div class="two-columns-sidebar">
+      {% include blog-tags-box.html %}
+
+      {% include blog-series-box.html %}
+
+      {% include blog-other-posts-box.html %}
+
+      {% include blog-social-networks-box.html %}
+   </div>
+</div>

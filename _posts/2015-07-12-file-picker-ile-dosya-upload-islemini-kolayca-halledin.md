@@ -2,7 +2,7 @@
 title: Filepicker ile Dosya Upload İşlemini Kolayca Halledin
 permalink: /file-picker-servisi
 categories: [saas]
-tags: [arac]
+tags: [tools]
 ---
 
 ### Filepicker Nedir
