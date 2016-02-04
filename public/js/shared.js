@@ -92,6 +92,11 @@ Project Box Animation
 ***********************
 */
 window.initProjectBoxAnimation = function() {
+   // Fix Mobile Browser's hover state issue
+   $('.project-box').click(function() {
+      return;
+   });
+
    $('[data-target-project]').click(function() {
       var id = $(this).data('target-project');
       var target = $('[data-project="'+ id +'"]')
