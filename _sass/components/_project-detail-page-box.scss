@@ -31,13 +31,17 @@
    button[data-trigger="dismiss"] {
       position: fixed;
       top: .5rem;
-      right: 1rem;
+      right: 0;
       border: none;
       color: #aaa;
       font-size: 2rem;
       background: transparent;
       font-weight: 100;
       z-index: 400;
+
+      @include breakpoint ('desktop') {
+         right: 1rem;
+      }
    }
    
    .column {
