@@ -36,16 +36,16 @@ Aslında mobil tarayıcılarda butonlara tıkladığınızda hover state'ini tet
 
 Fakat tıklanabilir olmayan bir element için hover durumunu tetiklememiz gerekiyorsa yapabileceklerimiz:
 
-#### Cursor:pointer
+#### Cursor: pointer
 
-Bir `div` ya da herhangi tıklanabilir olmayan bir element için css'de `cursor:pointer` deklerasyonunu yaptığınız zaman
+Bir `div` ya da herhangi tıklanabilir olmayan bir element için css'de `cursor:pointer` deklare ettiğiniz zaman
 Chrome bu element'in tıklanabilir bir element olduğunu anlayarak bu elemente tıklanıldığında **"hover"** state'ini tetikliyor.
 
 Fakat Safari'de sorun hala devam ediyor.
 
 #### onclick=""
 
-Tüm tarayıcılarda sorunu çözen genel tanımlama sanırım bu. Element'e `onlick=""` tanımlaması yaptığımız zaman Chrome da Safari de bu element tıklanabilir olduğu için `hover` state'ini tetikliyor.
+Tüm tarayıcılarda sorunu çözen genel tanımlama sanırım bu. Element'e `onclick=""` tanımlaması yaptığımız zaman Chrome da Safari de bu element tıklanabilir olduğu için `hover` state'ini tetikliyor.
 
-Tek tek elementlere `onlick=""` tanımlaması yapmakla uğraşmamak için bunu JavaScrip ile halledebilirsiniz.
+Tek tek elementlere `onclick=""` tanımlaması yapmakla uğraşmamak için bunu JavaScript ile halledebilirsiniz.
 
