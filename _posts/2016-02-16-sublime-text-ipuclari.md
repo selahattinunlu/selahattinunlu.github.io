@@ -12,7 +12,7 @@ Sublime Text ile çalışırken verimliliğimizi arttıracak bir kaç ipucunu si
 
 Yeni şeyler öğrendikçe bu gönderiyi güncellemeyi planlıyorum.
 
-###1- Save on focus lost
+### Save on focus lost
 
 Bir dosyada yaptığımız her değişiklikten sonra sürekli olarak ctrl + s  (command + s) yapmak bize fazla vakit kaybettirmiyor
 gibi görünse de her defasında gereksiz yere tekrarlanan bir işlem olduğu için verimliliğimizi etkileyecektir.
@@ -25,7 +25,7 @@ Ayrıca isterseniz sadece bu özelliği sadece CSS,PHP gibi spesifik olarak iste
 
 Örneğin CSS için böyle bir ayar yapmak istiyorsanız CSS.sublime-settings dosyası oluşturmalı ve bu dosya içerisinde üstte belirttiğim ayarı eklemelisiniz.
 
-###2- Paste and Indent
+### Paste and Indent
 
 Bu en sevdiğim özelliklerden biri ve gerçekten çok zaman kazandırıyor. Özellikle stackoverflow gibi internet üzerinde
 yer alan bazı kod parçalarını kopyalayıp kodlarımız arasında yapıştırdığımız zaman genelde kod girintilerinde sıkıntı oluyor ve 
@@ -49,7 +49,7 @@ Böylece sadece yapıştırma işlemini "ctrl+shift+v" tuşları tetiklerken, "c
    "ctrl" yerine "super" tanımlaması yapmalısınız.
 </div>
 
-###3- Reindent Keyboard Shortcut
+### Reindent Keyboard Shortcut
 
 Reindent yani kod girintilerini yeniden düzenlemek için Sublime Text'de `Edit > Line` sekmesinde yer alan `Reindent` seçilerek yapılabiliyor.
 

@@ -13,11 +13,11 @@ Neden geliştirdim?
 
 Yeni öğrendiğim kelimeleri ekleyip daha sonradan alıştırma yapabilmek için geliştirdim. Şuanda sadece Türkçe ve İngilizce seçeneklerine sahip fakat ilerleyen süreçte tüm dilleri ekleyeceğim. (Diğer kullanıcılar farklı dillerde de kelimeler öğrenebilir sonuçta :) )
 
-###Geri Bildirimler
+### Geri Bildirimler
 
 Mobil uygulama geliştirme konusunda çok tecrübeli değilim. Belki farklı iOS sürümlerinde hatalar olabilir. Bu noktada geri bildirimleriniz önemli. Eğer denk geldiğiniz hatalar olursa benimle paylaşırsanız sevinirim.
 
-###Fikirler
+### Fikirler
 
 - Sonraki versiyonlarda alıştırma yapmak için eklenen kelimeleri rastgele olarak soran bir özellik eklenebilir.
 - Türkçe ve İngilizce dışında ki diğer dillere kelime ekleyebilme özelliği
