@@ -12,7 +12,7 @@ Sublime Text ile çalışırken verimliliğimizi arttıracak bir kaç ipucunu si
 
 Yeni şeyler öğrendikçe bu gönderiyi güncellemeyi planlıyorum.
 
-###1- Save on focus lost
+### 1- Save on focus lost
 
 Bir dosyada yaptığımız her değişiklikten sonra sürekli olarak ctrl + s  (command + s) yapmak bize fazla vakit kaybettirmiyor
 gibi görünse de her defasında gereksiz yere tekrarlanan bir işlem olduğu için verimliliğimizi etkileyecektir.
