@@ -1,20 +1,10 @@
-
-$(function() {
-   /*
-   **********************
-   Header Animation
-   ***********************
-   */
-   var $header = $('#wrapper > .header');
-   var $appContent = $('#wrapper > .app-content');
-
-   var headerHeight = $header.outerHeight();
-   var lastScrollTop = 0;
-
-   $appContent.css('padding-top', headerHeight + 'px');
-
-   $(document).scroll(function() {
-      var scrollTop = $(document).scrollTop();
+(function($) {
+   function handleHeaderAnimationWhenScrolling(parameters, e) {
+      var $this = $(this),
+         $header = parameters.header,
+         lastScrollTop = parameters.lastScrollTop,
+         headerHeight = $header.outerHeight(),
+         scrollTop = $this.scrollTop(); 
 
       // scroll down and scroll up
       if (scrollTop > lastScrollTop) { 
@@ -33,27 +23,34 @@ $(function() {
          }
       }
 
-      lastScrollTop = scrollTop;
+      parameters.setLastScrollTop(scrollTop);
+   }
+
+   function toggleMobileMenu(e) {
+      $('.mobile-menu').toggleClass('is-open');
+   }
+
+   // jQuery is ready...
+   $(function() {
+      var $header = $('#wrapper > .header'), 
+         $appContent = $('#wrapper > .app-content'),
+         $mobileMenuTrigger = $('[data-trigger="mobile-nav"]'),
+         headerHeight = $header.outerHeight(),
+         lastScrollTop = 0;
+
+      $appContent.css('padding-top', headerHeight + 'px');
+
+      $(document).on('scroll', $.proxy(handleHeaderAnimationWhenScrolling, null, { 
+         header: $header,
+         lastScrollTop: lastScrollTop,
+         setLastScrollTop: function(value) {
+            lastScrollTop = value;
+         }
+      }));
+
+      $mobileMenuTrigger.on('click', toggleMobileMenu);
    });
-
-
-   /*
-   **********************
-   Mobile Menu
-   ***********************
-   */
-   var $mobileMenu = $('.mobile-menu');
-   var $mobileMenuTrigger = $('.mobile-menu-trigger');
-   var $mobileMenuCloseTrigger = $('.mobile-menu-close-trigger');
-
-   $mobileMenuTrigger.click(function() {
-      $mobileMenu.addClass('is-open');
-   });
-
-   $mobileMenuCloseTrigger.click(function() {
-      $mobileMenu.removeClass('is-open');
-   });
-});
+})(jQuery);
 
 
 /*
