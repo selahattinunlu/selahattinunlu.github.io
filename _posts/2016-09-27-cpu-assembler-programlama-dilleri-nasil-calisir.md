@@ -11,7 +11,7 @@ references: [
 <div class="alert-box">
     <h2 class="title">Dikkat</h2>
     
-    Bu makale <a href="http://www.codeproject.com/Articles/315505/How-processor-assembler-and-programming-languages" target="_blank">coreproject.com</a>'da yer alan makalenin çevirisidir. Çeviride hatalı olduğunu düşündüğünüz yerler varsa ya da eksik bilgiler olduğunu düşünüyorsanız <a target="_blank" href="https://github.com/selahattinunlu/selahattinunlu.github.io/blob/master/_posts/2016-09-27cpu-assembler-programlama-dilleri-nasil-calisir.md">Github</a> üzerinden düzeltmeler yaparak katkı sağlayabilirsiniz.
+    Bu makale <a href="http://www.codeproject.com/Articles/315505/How-processor-assembler-and-programming-languages" target="_blank">coreproject.com</a>'da yer alan makalenin çevirisidir. Çeviride hatalı olduğunu düşündüğünüz yerler varsa ya da eksik bilgiler olduğunu düşünüyorsanız <a target="_blank" href="https://github.com/selahattinunlu/selahattinunlu.github.io/blob/master/_posts/2016-09-27-cpu-assembler-programlama-dilleri-nasil-calisir.md">Github</a> üzerinden düzeltmeler yaparak katkı sağlayabilirsiniz.
 </div>
 
 ### Giriş
