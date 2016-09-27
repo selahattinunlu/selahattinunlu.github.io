@@ -1,0 +1,26 @@
+---
+title: Programming
+layout: blog
+---
+
+{% for post in site.posts %}
+   {% if post.tags contains 'programming' %}
+      <article class="article-box">
+         {% if post.image %}
+            <div class="post-image" style="background: url({{ post.image }})">
+            </div>
+         {% endif %}
+
+         <div class="post-inner">
+            <div class="post-header">
+               <a href="{{ site.baseurl }}{{ post.url }}" class="post-title">
+                  {{ post.title }}
+               </a>
+               <span class="post-date">
+                  {{ post.date | date_to_string }}
+               </span>
+            </div>
+         </div>
+      </article>
+   {% endif %}
+{% endfor %}
