@@ -42,6 +42,39 @@ title: Resume
     .description-section-body a {
         font-size: .9em;
     }
+
+    @media print {
+        h1,h2,h3,h4,h5,h6 {
+            page-break-after: avoid;
+        }
+
+        h1::first-letter,
+        h2::first-letter,
+        h3::first-letter,
+        h4::first-letter,
+        h5::first-letter,
+        h6::first-letter {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    
+        .section {
+            padding: 0 !important;
+        }
+
+        header.header,
+        footer.footer {
+            display: none !important;
+        }
+
+        section.app-content {
+            padding-top: 0!important;
+        }
+
+        @page {
+            margin: 2cm;
+        }
+    }
 </style>
 
 <div class="section p-b-0">
