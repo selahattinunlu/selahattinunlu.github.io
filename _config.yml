@@ -48,6 +48,7 @@ pages_list:
   Freelance: '/isler'
   Projeler: '/projeler'
   Arşiv: '/arsiv'
+  Resume: '/resume'
   Feed: '/atom.xml'
 
 collections:
