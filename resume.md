@@ -83,7 +83,7 @@ title: Resume
    <div class="resume-links">
        <p class="no-margin">Mail: selahattin.unlu@yandex.com</p>
        <p>Github: <a href="//github.com/selahattinunlu" target="_blank">github.com/selahattinunlu</a></p>
-       <p>Phone Number: 90 535 582 7574</p>
+       <p>Phone Number: +90 535 582 7574</p>
    </div>
    <div class="description">
         <div class="description-section">
@@ -91,26 +91,17 @@ title: Resume
 
             <div class="description-section-body">
                 <div class="m-b-2">
-                    <h5>Full Stack Developer, Burnaz Turizm <small> - June 2012 - June 2014, Istanbul</small></h5>
+                    <h5>Senior Full Stack Developer,  Projet<small> - September 2017 - Present, Istanbul</small></h5>
 
-                    <ul>
-                        <li>I was doing integration with 3rd party services for hotel searching, reservation etc. For example hotel.com</li>
-                        <li>I was working on Front End also. We weren't have any front end framework like AngularJS. I was building pages just using HTML5&CSS3 and JavaScript with jQuery</li>
-                        <li>We had a large database realy. There were hundreds of tables. I was managing it and was working to improve performance.</li>
-                        <li>We were using memcached there for caching.</li>
-                    </ul>
+                    <p>Developing enterprise level applications, In our company we have wide range enterprise applications supports our customers, I mainly focused on ERP (Odoo) using following technologies : Python, PostgreSQL, Odoo, AWS, Node.js, Javascript.</p>
                 </div>
 
                 <!--  -->
 
                 <div class="m-b-2">
-                    <h5>Full Stack Developer, Goldmansoft <small> - June 2014 - April 2016, Istanbul</small></h5>
+                    <h5>Full Stack Developer,  Vidobu<small> - January 2017 - September 2017, Istanbul</small></h5>
 
-                    <ul>
-                        <li>I was working as a Full-Stack Developer.</li>
-                        <li>I made a lot of corparete websites for businesses.</li>
-                        <li>Finally, my boss had an idea named Mekanzade. So, we had cut building websites for businesses and we had started to build my boss's project. We had published the project as Beta. And then, due to financial problems, the project was left unfinished. <a href="http://www.mekanzade.com" target="_blank">You can check it from here</a></li>
-                    </ul>
+                    <p>Redesigned the website and implemented by me using HTML5 CSS3, JavaScript, Gulp, Sass, jQuery. Completed a lot of new integration like Payment Systems and other education companies. Refactored a lot of pieces of code which are violated the DRY principle.</p>
                 </div>
 
                 <!--  -->
@@ -118,44 +109,23 @@ title: Resume
                 <div class="m-b-2">
                     <h5>Full Stack Developer, MyNextMatch Ltd. <small> - April 2016 - January 2017, Istanbul</small></h5>
 
-                    <ul>
-                        <li>I'm working at MyNextMatch as Full-Stack Developer</li>
-                        <li>
-                            I worked more like a JavaScript developer. We were using AngularJS 1x version there.
-                        </li>
-                        <li>
-                            I had created a notification center to inform athletes, tournament officials, teams etc. according to detailed segments. A tournament admin can send a sms, mail, notification to related people in the that notification center.
-                        </li>
-                        <li>
-                            We had use React then in the some projects. For example, We had built a dashboard to provide to tournament's doctors to check athletes that if athlete is appropriate or not. 
-                        </li>
-                    </ul>
+                    <p>Built a lot of component on the website using AngularJS. Used PHP Laravel on back end. I built notification center to inform athletes, tournament officials, teams etc. according to detailed segments. Also, we used React in the some projects. For example we built a dashboard to provide to tournament's doctors to check athletes that if athlete is appropirate or not.</p>
                 </div>
 
                 <!--  -->
 
                 <div class="m-b-2">
-                    <h5>Full Stack Developer,  Vidobu<small> - January 2017 - present, Istanbul</small></h5>
+                    <h5>Full Stack Developer, Goldmansoft <small> - June 2014 - April 2016, Istanbul</small></h5>
 
-                    <ul>
-                        <li>I'm working at Vidobu as Full-Stack Developer</li>
-                        <li>I'm working with CodeIgniter 2x framework here.</li>
-                        <li>
-                            I'm making integration with other education companies, integration payment system (credit card, mobile payment etc). Also, I'm working on Front end (HTML5,CSS3,JavaScript. There is no any front end framework here.)
-                        </li>
-                        <li>
-                            We redesigned the website and I implemented the new design. (HTML5, CSS3, JavaScript, Sass, Gulp, jQuery)
-                        </li>
-                        <li>
-                            I'm making refactoring some times. Because the software is violating the DRY principle in a lot of places.
-                        </li>
-                        <li>
-                            I integrated a Container package to provide an abstraction and reduce dependencies. Also, I applied the Facade design pattern like Laravel. Thus, now, the software is more flexible than old times.
-                        </li>
-                        <li>
-                            They had not any test of the software when I came here. I'm creating tests also. I'm using Codeception, Selenium to create acceptance tests.
-                        </li>
-                    </ul>
+                    <p>Made a lot of corparete websites for businesses. Also, we started to build a project called Mekanzade. We built and published as beta version a project called Mekanzade. And then, due to financial problems the project was left unfinished.</p>
+                </div>
+
+                <!--  -->
+
+                <div class="m-b-2">
+                    <h5>Full Stack Developer, Burnaz Turizm <small> - June 2012 - June 2014, Istanbul</small></h5>
+
+                    <p>Completed integration for 3rd party services for hotel seraching, reservation etc. For example hotel.com. There was a large database there. Managed that large database and worked to improve performance.</p>
                 </div>
             </div>
         </div>
@@ -176,7 +146,6 @@ title: Resume
                 <div class="m-b-2">
                     <h5>React-Redux Starter</h5>
                     <p>
-                        I had built a starter for React-Redux while working on React project at MyNextMatch company.
                         It contains some packages like apisauce, immutable, redux-saga, reduxsauce, reselect etc.
                         It makes easier to start a React-Redux project.
                     </p>
@@ -192,27 +161,7 @@ title: Resume
                     <div class="clearfix"></div>
                     <a href="http://selahattinunlu.com/minesweeper-game/" target="_blank">Let's Play</a>
                 </div>
-
-                <div class="m-b-2">
-                    <h5>Flane (Mobile Game)</h5>
-                    <p>
-                        It is my first mobile game. I built it using Unity (C#)
-                    </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.devnotylabs.plane" target="_blank">Check it on Play Store</a>
-                </div>
-
-                <div class="m-b-2">
-                    <h5>Ham (Mobile Game)</h5>
-                    <p>
-                        Here is my second game!
-                        Touch the screen at the right time and be patient.
-                        Ham is arcade game for mobile devices. I warn you, Ham can be little frustrating :)
-                    </p>
-                    <p>
-                        I built it using Unity (C#)
-                    </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.devnoty.ham" target="_blank">Check it on Play Store</a>
-                </div>
+                
                 <div class="m-b-2">
                     <h5>TapJum (Mobile Game)</h5>
                     <p>
@@ -233,7 +182,7 @@ title: Resume
             <div class="description-section-body">
                 <div class="m-b-2">
                     <p>
-                        PHP, MySQL, NodeJS, Laravel, CodeIgniter, RESTful Web Services, Git, Object Oriented Programming, Linux, OS X, Design Patterns, TDD, Redis
+                        Python, PostgreSQL, Odoo, Enterprise Resource Planning Softwares, MySQL, NodeJS, Laravel, CodeIgniter, RESTful Web Services, Git, Object Oriented Programming, Linux, OS X, Deisgn Patterns, TDD, Redis
                     </p>
                     <p>
                         HTML5 & CSS3, JavaScript, jQuery, ReactJS, AngularJS, Ionic Framework, Bootstrap, ES6
@@ -252,8 +201,7 @@ title: Resume
             <div class="description-section-body">
                 <div class="m-b-2">
                     <h5>Istanbul University <small>Economic and Managerial Sciences Faculty, Business Administration</small></h5>
-
-                    <p>I'm still student here. I will graduate in two years.</p>
+                    <p>I'm still student here.</p>
                 </div>
             </div>
         </div>
