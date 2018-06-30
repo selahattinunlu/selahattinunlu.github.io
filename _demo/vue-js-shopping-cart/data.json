@@ -1,0 +1,27 @@
+{
+  "cart": [
+    {
+      "name": "Modern Boho Tribal Bedding Aztec Stripe Print Cotton Duvet Quilt Cover Set Native American Denim Blue and White Bohemian Urban Hippie Geometric Pattern (Queen, Orange Multicolor)",
+      "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/51C+f9kSweL._AC_US200_.jpg",
+      "url": "https://www.amazon.com/Duvet-Cover-Set-Geometric-Multicolor/dp/B073G92ZFL/ref=lp_17732898011_1_7?s=home-garden&ie=UTF8&qid=1530352607&sr=1-7",
+      "price": "$78.80",
+      "is_available": true
+    },
+    {
+      "name": "Sookie 3 Piece Duvet Cover Set with 2 Pillow Shams - 800 Thread Count Luxurious&Extremely Durable Premium Bedding Collection - Multi-color Geometric triangle pattern - Twin Size",
+      "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/51MD4AJ8R4L._AC_US200_.jpg",
+      "url": "https://www.amazon.com/Sookie-Piece-Duvet-Cover-Pillow/dp/B01M2WCU0X/ref=lp_17732898011_1_10?s=home-garden&ie=UTF8&qid=1530352607&sr=1-10",
+      "price": "$22.58",
+      "is_available": false
+    }
+  ],
+  "saved": [
+    {
+      "name": "Modern Chevron Duvet Cover Set Blue and Gray Geometric Design Reversible Zig Zag Printed 100-percent Cotton 3 Piece Bedding Set (Twin, Teal)",
+      "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/51DJ6xujsCL._AC_US200_.jpg",
+      "url": "https://www.amazon.com/Chevron-Geometric-Reversible-Printed-100-percent/dp/B073BXD54Q/ref=lp_17732898011_1_17?s=home-garden&ie=UTF8&qid=1530352607&sr=1-17",
+      "price": "$54.80",
+      "is_available": true
+    }
+  ]
+}

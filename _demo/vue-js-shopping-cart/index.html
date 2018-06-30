@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+   <div v-show="loading">Loading...</div>
+   <div id="cart" v-show="!loading">
+      <h3>Shopping Cart</h3>
+      <hr>
+      <div class="item" v-for="(item, index) in cart">
+         <div class="item-image">
+            <a v-bind:href="item.url">
+               <img v-bind:src="item.thumbnail" alt="Alternate Text">
+            </a>
+         </div>
+         <div class="item-content">
+            <a v-bind:href="item.url" class="item-title">{{ item.name }}</a>
+            <div v-if="!item.is_available" class="item-stock-status">Not available, order soon.</div>
+            <div v-if="item.is_available" class="item-stock-status available">In stock</div>
+            <div class="item-buttons">
+               <a role="button" v-on:click="delete_from_cart(index)">Delete</a>
+               <a role="button" v-on:click="save_for_later(index)">Save For Later</a>
+            </div>
+         </div>
+         <div class="item-price">
+            {{ item.price }}
+         </div>
+      </div>
+   </div>
+
+   <div id="saved-list" v-show="!loading">
+      <h3>Saved For Later</h3>
+      <hr>
+      <div class="item" v-for="(item, index) in saved">
+         <div class="item-image">
+            <a v-bind:href="item.url">
+               <img v-bind:src="item.thumbnail" alt="Alternate Text">
+            </a>
+         </div>
+         <div class="item-content">
+            <a v-bind:href="item.url" class="item-title">{{ item.name }}</a>
+            <div v-if="!item.is_available" class="item-stock-status">Not available, order soon.</div>
+            <div v-if="item.is_available" class="item-stock-status available">In stock</div>
+            <div class="item-buttons">
+               <a role="button" v-on:click="delete_from_saved(index)">Delete</a>
+               <a role="button" v-on:click="add_to_cart(index)">Add to cart</a>
+            </div>
+         </div>
+         <div class="item-price">
+            {{ item.price }}
+         </div>
+      </div>
+   </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

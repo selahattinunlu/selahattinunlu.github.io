@@ -1,0 +1,55 @@
+html,
+body {
+    font-family: 'Roboto', Arial;
+}
+
+a {
+    text-decoration: none;
+    color: #0066c0;
+}
+
+a[role="button"] {
+    cursor: pointer;
+}
+
+#cart,
+#saved-list {
+    width: 80%
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.item .item-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.item .item-image img {
+    width: 100%
+}
+
+.item .item-content {
+    flex-grow: 3
+}
+
+.item .item-price {
+    color: #B12704;
+}
+
+.item .item-stock-status {
+    font-size: 12px;
+    color: #B12704;
+}
+
+.item .item-stock-status.available {
+    color: #008a00;
+}
+
+.item .item-buttons {
+    margin-top: 10px;
+}
