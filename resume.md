@@ -190,7 +190,7 @@ title: Resume
             <div class="description-section-body">
                 <div class="m-b-2">
                     <p>
-                        Python, PostgreSQL, Odoo, Enterprise Resource Planning Softwares, MySQL, NodeJS, Laravel, CodeIgniter, RESTful Web Services, Git, Object Oriented Programming, Linux, OS X, Deisgn Patterns, TDD, Redis
+                        PHP, Python, PostgreSQL, Odoo, Enterprise Resource Planning Softwares, MySQL, NodeJS, Laravel, CodeIgniter, RESTful Web Services, Git, Object Oriented Programming, Linux, OS X, Deisgn Patterns, TDD, Redis
                     </p>
                     <p>
                         HTML5 & CSS3, JavaScript, jQuery, ReactJS, AngularJS, Ionic Framework, Bootstrap, ES6
