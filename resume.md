@@ -91,7 +91,15 @@ title: Resume
 
             <div class="description-section-body">
                 <div class="m-b-2">
-                    <h5>Senior Full Stack Developer,  Projet<small> - September 2017 - Present, Istanbul</small></h5>
+                    <h5>Freelance Full Stack Developer <small> - July 2018 - Present, Istanbul</small></h5>
+
+                    <p>I started to working as a freelance developer. Currently, I'm working as Freelance Full Stack Developer for Eyedius company.</p>
+                </div>
+
+                <!--  -->
+
+                <div class="m-b-2">
+                    <h5>Senior Full Stack Developer,  Projet<small> - September 2017 - July 2018, Istanbul</small></h5>
 
                     <p>Developing enterprise level applications, In our company we have wide range enterprise applications supports our customers, I mainly focused on ERP (Odoo) using following technologies : Python, PostgreSQL, Odoo, AWS, Node.js, Javascript.</p>
                 </div>
