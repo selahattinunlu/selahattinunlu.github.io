@@ -1,0 +1,74 @@
+* {
+  font-family: 'Gothic A1', sans-serif !important;
+}
+
+html,
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+header.main-header {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+header.main-header h1 {
+  font-weight: bold !important;
+  font-size: 3rem;
+  color: #444;
+  margin-bottom: 0;
+}
+header.main-header p {
+  font-size: 1.2rem;
+  color: #989898;
+  margin-bottom: .5rem;
+}
+header.main-header a {
+  color: #76b9b1;
+  font-weight: bold;
+}
+header.main-header .contact {
+  margin-top: 1rem;
+}
+header.main-header .contact p {
+  font-size: 1rem;
+}
+
+main.main-content {
+  //
+}
+main.main-content > section {
+  margin-bottom: 4rem;
+}
+main.main-content > section h3 {
+  margin-top: .5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+main.main-content > section p {
+  margin-bottom: 0;
+}
+main.main-content > section a {
+  color: #76b9b1;
+  font-weight: bold;
+}
+main.main-content > section.resume-section section {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+main.main-content > section.resume-section h3 {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+main.main-content > section.resume-section section header h4 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+main.main-content > section.resume-section section header small {
+  display: block;
+  margin-bottom: 1rem;
+}
