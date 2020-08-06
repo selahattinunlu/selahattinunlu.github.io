@@ -21,35 +21,53 @@
   <body>
     <header>
       <div class="container">
-        <h1>Selahattin Ünlü</h1>
-        <p>Freelance Full Stack Developer</p>
+        <div class="header-inner">
+          <section>
+            <h1>Selahattin Ünlü</h1>
+            <p>Freelance Full Stack Developer</p>
 
-        <nav>
-          <a href="https://github.com/selahattinunlu" target="_blank">
-            Github
-          </a>
+            <nav>
+              <a href="https://github.com/selahattinunlu" target="_blank">
+                Github
+              </a>
 
-          <a href="https://twitter.com/selahattinunlu" target="_blank">
-            Twitter
-          </a>
+              <a href="https://twitter.com/selahattinunlu" target="_blank">
+                Twitter
+              </a>
 
-          <a
-            href="https://www.linkedin.com/in/selahattin-%C3%BCnl%C3%BC-9ab25468/"
-            target="_blank"
-          >
-            Linkedin
-          </a>
+              <a
+                href="https://www.linkedin.com/in/selahattin-%C3%BCnl%C3%BC-9ab25468/"
+                target="_blank"
+              >
+                Linkedin
+              </a>
 
-          <a href="https://www.instagram.com/selahattin.unlu/" target="_blank">
-            Instagram
-          </a>
-        </nav>
+              <a
+                href="https://www.instagram.com/selahattin.unlu/"
+                target="_blank"
+              >
+                Instagram
+              </a>
+            </nav>
+          </section>
+
+          <section>
+            <label>
+              <input type="checkbox" id="theme-switch-button" />
+              Dark Mode
+            </label>
+          </section>
+        </div>
       </div>
     </header>
 
     <div class="container">
       <main>
-        <su-section title="Side Projects" image="images/project.png">
+        <su-section
+          title="Side Projects"
+          image="images/project.png"
+          theme="light"
+        >
           <p>
             You can find my side projects at
             <a href="https://github.com/selahattinunlu" target="_blank">
@@ -58,7 +76,7 @@
           </p>
         </su-section>
 
-        <su-section title="Blog" image="images/blog.png">
+        <su-section title="Blog" image="images/blog.png" theme="light">
           <p>
             I love to share my opinions with people.
           </p>
@@ -71,7 +89,7 @@
           </p>
         </su-section>
 
-        <su-section title="Resume" image="images/resume.png">
+        <su-section title="Resume" image="images/resume.png" theme="light">
           <p>
             You can read my resume by
             <a href="resume.html">clicking here</a> if you want to know more
@@ -82,5 +100,24 @@
     </div>
 
     <script src="components/section.js"></script>
+
+    <!-- dark mode -->
+    <script>
+      const darkModeCheckbox = document.querySelector("#theme-switch-button");
+
+      darkModeCheckbox.addEventListener("change", (event) => {
+        document.querySelector("html").classList.toggle("dark");
+
+        const sections = document.querySelectorAll("su-section");
+
+        sections.forEach((section) => {
+          console.log(section);
+          section.setAttribute(
+            "theme",
+            event.target.checked ? "dark" : "light"
+          );
+        });
+      });
+    </script>
   </body>
 </html>

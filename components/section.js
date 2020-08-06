@@ -18,6 +18,21 @@ class Section extends HTMLElement {
     this.initTemplate();
   }
 
+  static get observedAttributes() {
+    return ["theme"];
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === "theme") {
+      const images = this.shadowRoot.querySelectorAll("img");
+      images.forEach((img) => {
+        img.style.filter = `brightness(${
+          newValue === "dark" ? 0.7 : 1
+        }) contrast(${newValue === "dark" ? 1.2 : 1})`;
+      });
+    }
+  }
+
   initTemplate() {
     this.shadowRoot.innerHTML = `
       ${this._css}
@@ -41,6 +56,10 @@ class Section extends HTMLElement {
   initCss() {
     this._css = `
       <style>
+      img {
+        transition: all .3s;
+      }
+
       section {
         display: flex;
         flex-direction: column;

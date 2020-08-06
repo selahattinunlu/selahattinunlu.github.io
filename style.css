@@ -13,6 +13,17 @@
   --breakpoint-xl: 1280px;
 }
 
+html.dark,
+html.dark body {
+  background: #242424;
+  color: #aaa;
+
+  --gray: #aaa;
+  --dark-gray: #c1c1c1;
+
+  --primary-color: #75b1af;
+}
+
 * {
   font-family: "Roboto", sans-serif !important;
 }
@@ -23,6 +34,7 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: all 0.3s;
 }
 
 a {
@@ -60,6 +72,11 @@ header a {
   font-weight: bold;
 }
 
+header .header-inner {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -75,6 +92,11 @@ main su-section {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+  }
+
+  header .header-inner {
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
